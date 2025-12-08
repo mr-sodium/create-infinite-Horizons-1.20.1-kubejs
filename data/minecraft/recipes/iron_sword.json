@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:iron_sheet"
+    },
+    "A": {
+        "item": "minecraft:iron_nugget"
+    },
+    "C": {
+      "item": "minecraft:iron_block"
+    },
+    "L": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " N ",
+    "ACA",
+    "NLN"
+  ],
+  "result": {
+    "item": "minecraft:iron_sword"
+  },
+  "show_notification": true
+}

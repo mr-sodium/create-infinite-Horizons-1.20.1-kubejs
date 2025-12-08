@@ -1,0 +1,20 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " NN",
+    " AN",
+    "A  "
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:ingots/brass"
+    },
+    "A":{
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "create_sa:brass_shovel",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:chain"
+    },
+    "A": {
+      "item": "decorative_blocks:chain"
+    }
+  },
+  "pattern": [
+    "N N",
+    "ANA",
+    "NAN"
+  ],
+  "result": {
+    "item": "minecraft:chainmail_chestplate"
+  },
+  "show_notification": true
+}

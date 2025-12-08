@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:gold_nugget"
+    },
+    "A": {
+        "item": "minecraft:stone"
+    },
+    "C": {
+      "item": "create:golden_sheet"
+    }
+  },
+  "pattern": [
+    " N ",
+    "NAN",
+    " C "
+  ],
+  "result": {
+    "item": "kubejs:gilded_upgrade_template"
+  },
+  "show_notification": false
+}

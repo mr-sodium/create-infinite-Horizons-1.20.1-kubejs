@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NAN",
+    "CLC",
+    "sss"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:gold_nugget"
+    },
+    "A": {
+      "item": "minecraft:bundle"
+    },
+    "C": {
+      "item": "create:golden_sheet"
+    },
+    "L": {
+      "item" : "minecraft:gold_ingot"
+    },
+    "s": {
+      "item" : "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "yyzsbackpack:gold_backpack",
+    "count": 1
+  }
+}

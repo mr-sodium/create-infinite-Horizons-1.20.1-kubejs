@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "create:polished_rose_quartz"
+    },
+    "A": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "NN",
+    "NN",
+    "AA"
+  ],
+  "result": {
+    "item": "create:electron_tube"
+  },
+  "show_notification": true
+}

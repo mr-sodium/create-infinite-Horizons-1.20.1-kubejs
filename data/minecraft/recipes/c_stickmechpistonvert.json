@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:sticky_piston"
+    },
+    {
+      "item": "create:vertical_gearbox"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:sticky_mechanical_piston"
+    }
+  ]
+}

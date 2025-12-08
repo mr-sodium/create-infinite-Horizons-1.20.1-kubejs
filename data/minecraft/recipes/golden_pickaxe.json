@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:gold_block"
+    },
+    "A": {
+        "item": "create:golden_sheet"
+    },
+    "C": {
+      "item": "create_sa:zinc_handle"
+    }
+  },
+  "pattern": [
+    "NNA",
+    " C ",
+    " C "
+  ],
+  "result": {
+    "item": "minecraft:golden_pickaxe"
+  },
+  "show_notification": true
+}

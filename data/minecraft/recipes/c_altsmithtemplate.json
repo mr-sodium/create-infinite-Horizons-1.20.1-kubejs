@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+    },
+    "A": {
+        "item": "minecraft:netherrack"
+    },
+    "C": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    " N ",
+    "CAC",
+    " C "
+  ],
+  "result": {
+    "item": "minecraft:netherite_upgrade_smithing_template",
+    "count": 2
+  },
+  "show_notification": false
+}

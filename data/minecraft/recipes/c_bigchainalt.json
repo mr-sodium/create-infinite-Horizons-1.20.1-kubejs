@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:zinc_nugget"
+    },
+    "A": {
+        "item": "create:zinc_ingot"
+    }
+  },
+  "pattern": [
+    "NN",
+    "AA",
+    "NN"
+  ],
+  "result": {
+    "item": "decorative_blocks:chain",
+    "count": 4
+  },
+  "show_notification": false
+}

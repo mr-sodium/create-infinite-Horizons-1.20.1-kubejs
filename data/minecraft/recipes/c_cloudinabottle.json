@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:water_bucket"
+    },
+    "A": {
+        "item": "minecraft:dried_ghast"
+    },
+    "C": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "pattern": [
+    "N",
+    "A",
+    "C"
+  ],
+  "result": {
+    "item": "artifacts:cloud_in_a_bottle"
+  },
+  "show_notification": false
+}

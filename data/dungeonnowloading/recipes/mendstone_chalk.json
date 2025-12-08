@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": {
+      "item": "minecraft:calcite"
+    },
+    "A": {
+      "item": "dungeonnowloading:mendstone"
+    },
+    "C":{
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "pattern": [
+    " NA",
+    "NCN",
+    "AN "
+  ],
+  "result": {
+    "item": "dungeonnowloading:mendstone_chalk"
+  },
+  "show_notification": true
+}

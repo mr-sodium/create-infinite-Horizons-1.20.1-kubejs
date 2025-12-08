@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NN",
+    " A",
+    " A"
+  ],
+  "key": {
+    "N": {
+      "item": "create:copper_sheet"
+    },
+    "A":{
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "create_sa:copper_hoe",
+    "count": 1
+  }
+}

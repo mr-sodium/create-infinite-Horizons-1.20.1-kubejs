@@ -1,0 +1,17 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "NNN",
+    "N N",
+    "N N"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:ingots/brass"
+    }
+  },
+  "result": {
+    "item": "create_sa:brass_leggings",
+    "count": 1
+  }
+}

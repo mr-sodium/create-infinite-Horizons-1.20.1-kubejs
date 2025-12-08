@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "create_sa:zinc_handle"
+    }
+  },
+  "pattern": [
+    " NN",
+    " AN",
+    "A  "
+  ],
+  "result": {
+    "item": "minecraft:diamond_shovel"
+  },
+  "show_notification": true
+}

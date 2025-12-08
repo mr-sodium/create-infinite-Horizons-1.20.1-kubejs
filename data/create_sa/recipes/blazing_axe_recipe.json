@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_axe"
+    },
+    {
+      "item": "create:powdered_obsidian"
+    },
+    {
+      "item": "kubejs:blazing_upgrade_template"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_sa:blazing_axe",
+      "count": 1
+    }
+  ],
+  "heatRequirement": "heated"
+}

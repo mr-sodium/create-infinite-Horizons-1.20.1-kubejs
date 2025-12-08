@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "N N",
+    "ANA",
+    "CAC"
+  ],
+  "key": {
+    "N": {
+      "item": "create:copper_sheet"
+    },
+    "A": {
+      "item": "minecraft:copper_block"
+    },
+    "C": {
+      "item": "create:copper_nugget"
+    }
+  },
+  "result": {
+    "item": "create_sa:copper_chestplate",
+    "count": 1
+  }
+}

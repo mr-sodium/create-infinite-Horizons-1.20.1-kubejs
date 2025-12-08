@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "create:copper_sheet"
+    },
+    "A": {
+      "item": "minecraft:copper_block"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "NN",
+    "AC",
+    " C"
+  ],
+  "result": {
+    "item": "create_sa:copper_axe"
+  },
+  "show_notification": true
+}

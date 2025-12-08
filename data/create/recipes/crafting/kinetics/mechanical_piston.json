@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:piston"
+    },
+    {
+      "item": "create:gearbox"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:mechanical_piston"
+    }
+  ]
+}

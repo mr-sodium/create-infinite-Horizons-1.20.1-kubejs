@@ -1,0 +1,16 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "N N",
+    "N N"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:ingots/brass"
+    }
+  },
+  "result": {
+    "item": "create_sa:brass_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:golden_sheet"
+    },
+    "A": {
+      "item": "minecraft:gold_block"
+    },
+    "C": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "ACA"
+  ],
+  "result": {
+    "item": "minecraft:golden_helmet"
+  },
+  "show_notification": true
+}

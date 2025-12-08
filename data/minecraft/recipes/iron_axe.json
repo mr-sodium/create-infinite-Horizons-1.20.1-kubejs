@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:iron_sheet"
+    },
+    "A": {
+        "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "NN",
+    "AC",
+    " C"
+  ],
+  "result": {
+    "item": "minecraft:iron_axe"
+  },
+  "show_notification": true
+}

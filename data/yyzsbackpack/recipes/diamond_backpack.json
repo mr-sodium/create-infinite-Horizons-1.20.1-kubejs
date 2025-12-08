@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NAN",
+    "CNC",
+    "LLL"
+  ],
+  "key": {
+    "N": {
+      "item": "diamond_nuggets:diamond_nugget"
+    },
+    "A": {
+      "item": "minecraft:bundle"
+    },
+    "C": {
+      "item": "minecraft:diamond"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "yyzsbackpack:diamond_backpack",
+    "count": 1
+  }
+}

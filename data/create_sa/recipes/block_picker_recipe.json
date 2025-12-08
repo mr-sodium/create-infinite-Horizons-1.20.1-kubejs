@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:cogwheel"
+    },
+    "A": {
+        "item": "create_sa:hydraulic_engine"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "L": {
+      "item": "artifacts:universal_attractor"
+    },
+    "s": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "NAN",
+    "CLs"
+  ],
+  "result": {
+    "item": "create_sa:block_picker"
+  },
+  "show_notification": false
+}

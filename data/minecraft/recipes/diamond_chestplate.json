@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "diamond_nuggets:diamond_nugget"
+    },
+    "C": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "pattern": [
+    "NAN",
+    "CCC",
+    "NCN"
+  ],
+  "result": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "show_notification": true
+}

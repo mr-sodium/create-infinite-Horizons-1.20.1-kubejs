@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NAN",
+    "N N",
+    "C C"
+  ],
+  "key": {
+    "N": {
+      "item": "create:copper_sheet"
+    },
+    "A": {
+      "item": "minecraft:copper_block"
+    },
+    "C": {
+      "item": "create:copper_nugget"
+    }
+  },
+  "result": {
+    "item": "create_sa:copper_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NAN",
+    " C ",
+    " C "
+  ],
+  "key": {
+    "0": {
+      "item": "create:copper_sheet"
+    },
+    "A": {
+      "item": "minecraft:copper_block"
+    },
+    "1":{
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "create_sa:copper_pickaxe",
+    "count": 1
+  }
+}

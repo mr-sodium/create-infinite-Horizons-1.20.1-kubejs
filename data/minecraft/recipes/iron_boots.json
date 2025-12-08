@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:iron_nugget"
+    },
+    "A": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "N N",
+    "A A",
+    "A A"
+  ],
+  "result": {
+    "item": "minecraft:iron_boots"
+  },
+  "show_notification": true
+}

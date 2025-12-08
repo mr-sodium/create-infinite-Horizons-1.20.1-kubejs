@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:iron_block"
+    },
+    "A": {
+        "item": "create:sticker"
+    },
+    "C": {
+        "item": "create:andesite_alloy_block"
+    },
+    "L": {
+        "item": "minecraft:redstone_block"
+    },
+    "s": {
+        "tag": "minecraft:logs"
+    },
+    "a": {
+        "item": "minecraft:powered_rail"
+    }
+  },
+  "pattern": [
+    "NAN",
+    "CLC",
+    "sas"
+  ],
+  "result": {
+    "item": "create:cart_assembler"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "NANAN",
+    "CLsLC",
+    " aba "
+  ],
+  "key": {
+    "N": {
+      "item": "create:cogwheel"
+    },
+    "A": {
+      "item": "create:brass_ingot"
+    },
+    "C": {
+      "item": "create:encased_fan"
+    },
+    "L": {
+      "item": "create:brass_block"
+    },
+    "s": {
+      "item": "create_sa:steam_engine"
+    },
+    "a": {
+      "item": "create:andesite_alloy_block"
+    },
+    "b": {
+      "item": "minecraft:diamond_chestplate"
+    }
+  },
+  "result": {
+    "item": "create_sa:brass_jetpack_chestplate"
+  },
+  "acceptMirrored": false
+}

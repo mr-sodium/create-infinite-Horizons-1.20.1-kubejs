@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " N ",
+    "ACA",
+    "NLN"
+  ],
+  "key": {
+    "N": {
+      "item": "create:copper_sheet"
+    },
+    "A": {
+      "item": "create:copper_nugget"
+    },
+    "C": {
+      "item": "minecraft:copper_block"
+    },
+    "L": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "create_sa:copper_sword",
+    "count": 1
+  }
+}
