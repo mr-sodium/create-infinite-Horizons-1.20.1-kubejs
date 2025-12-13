@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:iron_nugget"
+    },
+    "O": {
+        "tag": "minecraft:logs"
+    },
+    "S": {
+        "item": "create:shaft"
+    }
+  },
+  "pattern": [
+    "NON",
+    "OSO",
+    "NON"
+  ],
+  "result": {
+    "item": "create:water_wheel"
+  },
+  "show_notification": false
+}
