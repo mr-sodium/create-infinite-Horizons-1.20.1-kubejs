@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "create:redstone_link"
+    },
+      "item": "create:item_vault"
+    },
+    "C": {
+      "item": "create:andesite_casing"
+    }
+  },
+  "pattern": [
+    "N",
+    "A",
+    "C"
+  ],
+  "result": {
+    "item": "create:stock_link"
+  },
+  "show_notification": true
+}
