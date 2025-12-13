@@ -5,5 +5,5 @@ StartupEvents.registry('item', event => {
     event.create('gilded_upgrade_template').displayName('guilded upgrade template')
 })
 StartupEvents.registry('item', event => {
-    event.create('rose_quartz_dust').displayName('rose qu   artz dust')
+    event.create('rose_quartz_dust').displayName('rose quartz dust')
 })

@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_block"
+    },
+    {
+      "item": "create:zinc_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:brass_block",
+      "count": 2
+    }
+  ],
+  "heatRequirement": "heated"
+} 
