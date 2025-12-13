@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "create:scoria"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:tuff"
+    }
+  ],
+  "heatRequirement": "heated"
+}
