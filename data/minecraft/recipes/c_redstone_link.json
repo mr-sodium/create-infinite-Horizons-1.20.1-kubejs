@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "create:transmitter"
+    },
+    "B": {
+      "item": "create:andesite_casing"
+    },
+    "O": {
+      "item": "dungeonnowloading:overcharged_redstone_block"
+    }
+  },
+  "pattern": [
+    "T",
+    "B",
+    "O"
+  ],
+  "result": {
+    "item": "create:redstone_link",
+    "count": 8
+  },
+  "show_notification": true
+}
