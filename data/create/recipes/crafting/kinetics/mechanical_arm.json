@@ -2,32 +2,32 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "N": {
-        "item": "minecraft:iron_block"
+    "U": {
+        "item": "artifacts:universal_attractor"
     },
-    "A": {
-        "item": "create:sticker"
+    "S": {
+        "item": "create:brass_sheet"
+    },
+    "B": {
+        "item": "create:brass_block"
     },
     "C": {
-        "item": "create:andesite_alloy_block"
+        "item": "supplementaries:cog_block"
     },
-    "L": {
-        "item": "minecraft:redstone_block"
+    "P": {
+        "item": "create:precision_mechanism"
     },
-    "s": {
-        "tag": "minecraft:logs"
-    },
-    "a": {
-        "item": "minecraft:powered_rail"
+    "A": {
+        "item": "create:brass_casing"
     }
   },
   "pattern": [
-    "NAN",
-    "CLC",
-    "sas"
+    "BSU",
+    "C  ",
+    "PA "
   ],
   "result": {
-    "item": "create:cart_assembler"
+    "item": "create:mechanical_arm"
   },
   "show_notification": false
 }
