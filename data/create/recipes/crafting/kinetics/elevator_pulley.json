@@ -1,25 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "N": {
-        "item": "create:cogwheel"
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "create:rope_pulley"
     },
-    "A": {
-        "item": "create:iron_sheet"
-    },
-    "C": {
-        "item": "create:andesite_casing"
+    {
+      "item": "create:sequenced_gearshift"
     }
-  },
-  "pattern": [
-    "NAN",
-    "ACA",
-    "NAN"
   ],
-  "result": {
-    "item": "create:vertical_gearbox",
-    "count": 2
-  },
-  "show_notification": false
+  "results": [
+    {
+      "item": "create:elevator_pulley"
+    }
+  ]
 }
