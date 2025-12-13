@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "create:redstone_link"
+    },
+    "A": {
+      "tag": "minecraft:wooden_buttons"
+    },
+    "C": {
+      "item": "create:rose_quartz_lamp"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "ACA",
+    "NNN"
+  ],
+  "result": {
+    "item": "create:linked_controller"
+  },
+  "show_notification": true
+}
