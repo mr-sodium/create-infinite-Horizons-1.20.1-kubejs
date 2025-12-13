@@ -3,31 +3,29 @@
   "category": "misc",
   "key": {
     "N": {
-        "item": "minecraft:iron_block"
+        "item": "create:brass_block"
     },
     "A": {
-        "item": "create:sticker"
+        "item": "create:brass_sheet"
     },
     "C": {
-        "item": "create:andesite_alloy_block"
+        "item": "artifacts:universal_attractor"
     },
     "L": {
-        "item": "minecraft:redstone_block"
+        "item": "supplementaries:cog_block"
     },
     "s": {
-        "tag": "minecraft:logs"
+        "tag": "create:precision_mechanism"
     },
     "a": {
-        "item": "minecraft:powered_rail"
+        "item": "create:brass_casing"
     }
   },
   "pattern": [
-    "NAN",
-    "CLC",
-    "sas"
+    "NACLsa"  
   ],
   "result": {
-    "item": "create:cart_assembler"
+    "item": "create:mechanical_arm"
   },
   "show_notification": false
 }
