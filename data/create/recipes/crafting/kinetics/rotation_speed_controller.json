@@ -10,12 +10,15 @@
     },
     "S": {
         "item": "create:shaft"
+    },
+    "b"{
+      "item": "create:brass_sheet"
     }
   },
   "pattern": [
-    "P",
-    "B",
-    "S"
+    "sPs",
+    "SBS",
+    "sss"
   ],
   "result": {
     "item": "create:rotation_speed_controller"
