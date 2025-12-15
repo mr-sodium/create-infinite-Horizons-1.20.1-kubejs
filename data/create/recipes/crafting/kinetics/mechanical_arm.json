@@ -3,6 +3,7 @@
   "category": "misc",
   "key": {
     "N": {
+<<<<<<< Updated upstream
         "item": "create:brass_block"
     },
     "A": {
@@ -11,18 +12,38 @@
     "C": {
         "item": "artifacts:universal_attractor"
     },
+=======
+        "item": "artifacts:universal_attractor"
+    },
+    "A": {
+        "item": "create:brass_sheet"
+    },
+    "C": {
+        "item": "create:brass_block"
+    },
+>>>>>>> Stashed changes
     "L": {
         "item": "supplementaries:cog_block"
     },
     "s": {
+<<<<<<< Updated upstream
         "tag": "create:precision_mechanism"
+=======
+        "item": "create:precision_mechanism"
+>>>>>>> Stashed changes
     },
     "a": {
         "item": "create:brass_casing"
     }
   },
   "pattern": [
+<<<<<<< Updated upstream
     "NACLsa"  
+=======
+    "NAC",
+    "L  ",
+    "sa "  
+>>>>>>> Stashed changes
   ],
   "result": {
     "item": "create:mechanical_arm"

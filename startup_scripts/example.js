@@ -6,4 +6,11 @@ StartupEvents.registry('item', event => {
 })
 StartupEvents.registry('item', event => {
     event.create('rose_quartz_dust').displayName('rose quartz dust')
+<<<<<<< Updated upstream:startup_scripts/example.js
 })
+=======
+})
+StartupEvents.registry('item', event => {
+    event.create('carbon_dust').displayName('carbon dust')
+})
+>>>>>>> Stashed changes:startup_scripts/loadup.js

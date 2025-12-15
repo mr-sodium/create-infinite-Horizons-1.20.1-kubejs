@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-        "item": "minecraft:sand"
+        "tag": "minecraft:sand"
     },
     "P": {
         "tag": "minecraft:wooden_pressure_plates"
