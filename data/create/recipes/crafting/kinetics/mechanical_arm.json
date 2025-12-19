@@ -14,11 +14,7 @@
     "C": {
         "item": "supplementaries:cog_block"
     },
-<<<<<<< Updated upstream
     "P": {
-=======
-    "s": {
->>>>>>> Stashed changes
         "item": "create:precision_mechanism"
     },
     "A": {
@@ -26,15 +22,9 @@
     }
   },
   "pattern": [
-<<<<<<< Updated upstream
     "BSU",
     "C  ",
     "PA "
-=======
-    "NAC",
-    "L  ",
-    "sa "  
->>>>>>> Stashed changes
   ],
   "result": {
     "item": "create:mechanical_arm"

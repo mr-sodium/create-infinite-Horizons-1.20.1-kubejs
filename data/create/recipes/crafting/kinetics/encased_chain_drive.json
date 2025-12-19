@@ -1,21 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "I": {
-        "item": "minecraft:iron_nugget"
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "create:andesite_casing"
     },
-    "A": {
-        "item": "create:andesite_casing"
+    {
+      "item": "createtransmission:transmission_chain"
     }
-  },
-  "pattern": [
-    "III",
-    "IAI",
-    "III"
   ],
-  "result": {
-    "item": "create:encased_chain_drive"
-  },
-  "show_notification": false
+  "results": [
+    {
+      "item": "create:encased_chain_drive"
+    }
+  ]
 }

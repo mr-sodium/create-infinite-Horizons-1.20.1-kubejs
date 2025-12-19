@@ -1,9 +1,7 @@
 StartupEvents.registry('item', event => {
-    event.create('blazing_upgrade_template').displayName('blazing upgrade template')
+    event.create('blazing_upgrade_template').displayName('Blazing upgrade template')
+    event.create('gilded_upgrade_template').displayName('Guilded upgrade template')
+    event.create('rose_quartz_dust').displayName('Rose quartz dust')
+    event.create('carbon_dust').displayName('Carbon dust')
 })
-StartupEvents.registry('item', event => {
-    event.create('gilded_upgrade_template').displayName('guilded upgrade template')
-})
-StartupEvents.registry('item', event => {
-    event.create('rose_quartz_dust').displayName('rose quartz dust')
-})
+//potato

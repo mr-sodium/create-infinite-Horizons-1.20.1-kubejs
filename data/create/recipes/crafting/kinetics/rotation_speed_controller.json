@@ -8,17 +8,17 @@
     "B": {
         "item": "create:brass_casing"
     },
-    "S": {
-        "item": "create:shaft"
-    },
-    "b"{
+    "S":{
       "item": "create:brass_sheet"
+    },
+    "H":{
+      "item": "create:shaft"
     }
   },
   "pattern": [
-    "sPs",
+    "SPS",
     "SBS",
-    "sss"
+    "SHS"
   ],
   "result": {
     "item": "create:rotation_speed_controller"
