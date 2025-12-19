@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+        "item": "minecraft:lever"
+    },
+    "C": {
+        "item": "create:golden_sheet"
+    },
+    "A": {
+        "item": "create:andesite_casing"
+    }
+  },
+  "pattern": [
+    " L ",
+    "CAC"
+  ],
+  "result": {
+    "item": "create:analog_lever",
+    "count": 4
+  },
+  "show_notification": false
+}
