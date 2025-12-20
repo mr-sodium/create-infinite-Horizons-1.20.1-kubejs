@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "AHA"
+  ],
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy_block"
+    },
+    "H": {
+      "item": "createdeco:andesite_sheet"
+    },
+    "S": {
+      "item": "minecraft:slime_block"
+    }
+  },
+  "result": {
+    "item": "create_sa:slime_helmet"
+  }
+}

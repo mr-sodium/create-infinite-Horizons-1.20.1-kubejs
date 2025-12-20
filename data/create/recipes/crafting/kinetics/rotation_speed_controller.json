@@ -13,12 +13,15 @@
     },
     "H":{
       "item": "create:shaft"
+    },
+    "C":{
+      "item": "createtransmission:transmission_chain"
     }
   },
   "pattern": [
+    "SCS",
     "SPS",
-    "SBS",
-    "SHS"
+    "HBH"
   ],
   "result": {
     "item": "create:rotation_speed_controller"
