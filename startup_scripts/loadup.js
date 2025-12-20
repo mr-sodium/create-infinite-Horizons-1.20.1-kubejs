@@ -1,7 +1,7 @@
 StartupEvents.modifyCreativeTab('kubejs:tab', event => {
 	event.displayName = ('Creating: Infinite Horizons')
 })
-
+//potato
 StartupEvents.registry('item', event => {
     event.create('blazing_upgrade_template').displayName('Blazing upgrade template')
     event.create('gilded_upgrade_template').displayName('Guilded upgrade template')
@@ -9,4 +9,3 @@ StartupEvents.registry('item', event => {
     event.create('carbon_dust').displayName('Carbon dust')
     event.create('brass_pipe').displayName('Brass pipe')
 })
-//potato
