@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": {
+      "item": "create:iron_sheet"
+    },
+    "A": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "tag": "minecraft:planks"
+    },  
+    "L": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "NAN",
+    "CCC",
+    "LNL"
+  ],
+  "result": {
+    "item": "minecraft:shield"
+  },
+  "show_notification": true
+}

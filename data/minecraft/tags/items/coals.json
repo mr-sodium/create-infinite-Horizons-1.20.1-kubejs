@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:coal_block",
+    "kubejs:carbon_dust",
+    "kubejs:charcoal_block",
+    "bygonenether:withered_coal_block"
+  ]
+}
