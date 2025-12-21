@@ -1,6 +1,3 @@
-StartupEvents.modifyCreativeTab('kubejs:tab', event => {
-	event.displayName = ('Creating: Infinite Horizons')
-})
 //potato
 StartupEvents.registry('item', event => {
     event.create('blazing_upgrade_template').displayName('Blazing upgrade template')
@@ -8,8 +5,4 @@ StartupEvents.registry('item', event => {
     event.create('rose_quartz_dust').displayName('Rose quartz dust')
     event.create('carbon_dust').displayName('Carbon dust')
     event.create('brass_pipe').displayName('Brass pipe')
-})
-StartupEvents.registry('block', event => {
-  event.create('charcoal_block').displayName('Block of Charcoal').soundType('stone').hardness(5).resistance(
-6).tagBlock('minecraft:mineable/pickaxe')
 })
