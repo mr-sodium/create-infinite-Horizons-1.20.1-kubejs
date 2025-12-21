@@ -28,24 +28,14 @@
         }
       ]
     },
-        {
-      "type": "create:pressing",
+            {
+      "type": "create:deploying",
       "ingredients": [
         {
           "item": "minecraft:netherite_ingot"
-        }
-      ],
-      "results": [
+        },
         {
-          "item": "minecraft:netherite_ingot"
-        }
-      ]
-    },
-    {
-      "type": "create:pressing",
-      "ingredients": [
-        {
-          "item": "minecraft:netherite_ingot"
+          "item": "create:sturdy_sheet"
         }
       ],
       "results": [
@@ -77,6 +67,35 @@
       "results": [
         {
           "item": "minecraft:netherite_ingot"
+        }
+      ]
+    },
+        {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:netherite_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:netherite_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:netherite_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:netherite_ingot"
+        },
+        {
+          "item": "create:sturdy_sheet"
         }
       ]
     }
