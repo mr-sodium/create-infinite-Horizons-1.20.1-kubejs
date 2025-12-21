@@ -1,0 +1,56 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:brass_ingot"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "item": "create:brass_sheet"
+    }
+  ],
+  "sequence": [ 
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_ingot"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create:brass_ingot"
+  }
+}
