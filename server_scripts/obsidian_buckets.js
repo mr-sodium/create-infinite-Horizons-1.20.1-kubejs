@@ -12,6 +12,8 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
 ItemEvents.rightClicked('kubejs:obsidian_lava_bucket', event => {
    const {player, item, target, level} = event
 
+   if (target.block.id == 'minecraft:lava') return
+   if (target.block.id == 'minecraft:water') return
    if (target.type == 'BLOCK') {
       let placePos = target.block.pos.relative(target.facing)
       level.getBlock(placePos).set('minecraft:lava')
@@ -35,6 +37,8 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
 ItemEvents.rightClicked('kubejs:obsidian_water_bucket', event => {
    const {player, item, target, level} = event
 
+   if (target.block.id == 'minecraft:lava') return
+   if (target.block.id == 'minecraft:water') return
    if (target.type == 'BLOCK') {
       let placePos = target.block.pos.relative(target.facing)
       level.getBlock(placePos).set('minecraft:water')
