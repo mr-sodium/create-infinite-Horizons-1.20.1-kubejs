@@ -9,13 +9,13 @@
         "item": "minecraft:netherrack"
     },
     "C": {
-      "item": "minecraft:netherite_scrap"
+      "item": "minecraft:echo_shard"
     }
   },
   "pattern": [
-    " N ",
-    "CAC",
-    " C "
+    "N",
+    "A",
+    "C"
   ],
   "result": {
     "item": "minecraft:netherite_upgrade_smithing_template",
