@@ -1,6 +1,5 @@
 {
   "type": "create:mechanical_crafting",
-  "category": "misc",
   "key": {
     "N": {
         "item": "minecraft:diamond"
@@ -16,11 +15,14 @@
     }
   },
   "pattern": [
-    "NACL"
+    "NNANN",
+    "NCCCN",
+    "NCLCN",
+    "NCCCN",
+    "NNNNN"
   ],
   "result": {
     "item": "minecraft:netherite_upgrade_smithing_template",
     "count": 2
-  },
-  "show_notification": true
+  }
 }
