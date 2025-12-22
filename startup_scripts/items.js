@@ -8,5 +8,6 @@ StartupEvents.registry('item', event => {
     event.create('obsidian_bucket').displayName('Obsidian Bucket').maxStackSize(16)
     event.create('obsidian_lava_bucket').displayName('Obsidian Lava Bucket').maxStackSize(1)
     event.create('obsidian_water_bucket').displayName('Obsidian Water Bucket').maxStackSize(1)
-  
+    event.create('obsidian_powder_snow_bucket').displayName('Obsidian Powder Snow Bucket').maxStackSize(1)
+    event.create('obsidian_milk_bucket').displayName('Obsidian Powder Snow Bucket').maxStackSize(1)
 })
