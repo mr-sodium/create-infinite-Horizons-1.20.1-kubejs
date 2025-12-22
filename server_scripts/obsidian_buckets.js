@@ -9,7 +9,7 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
       event.cancel()
    }
    if (target && target.block && target.block.id == 'minecraft:water' && target.block.properties.level == 0) {
-      target.block.set('minecraft:')
+      target.block.set('minecraft:air')
       item.count--
       player.give('kubejs:obsidian_water_bucket')
       player.swing()
