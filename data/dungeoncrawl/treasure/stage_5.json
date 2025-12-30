@@ -1,0 +1,70 @@
+[
+  {
+    "item": "minecraft:diamond_boots",
+    "weight": 0.1
+  },
+  {
+    "item": "minecraft:diamond_leggings",
+    "weight": 0.1
+  },
+  {
+    "item": "minecraft:diamond_chestplate",
+    "weight": 0.1
+  },
+  {
+    "item": "minecraft:diamond_helmet",
+    "weight": 0.1
+  },
+  {
+    "item": "minecraft:iron_boots",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:iron_leggings",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:iron_chestplate",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:iron_helmet",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:iron_pickaxe",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:iron_shovel",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:iron_sword",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:diamond_pickaxe",
+    "weight": 0.2
+  },
+  {
+    "item": "minecraft:diamond_sword",
+    "weight": 0.2
+  },
+  {
+    "item": "diamond_shovel",
+    "weight": 0.2
+  },
+  {
+    "item": "air",
+    "weight": 3
+  },
+    {
+    "item": "minecraft:diamond", 
+    "weight": 4
+  },
+  {
+    "item": "bygonenether:netherite_scrap_ingot",
+    "weight": 0.9
+  }
+]

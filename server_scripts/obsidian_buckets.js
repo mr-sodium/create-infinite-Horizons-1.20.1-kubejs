@@ -1,6 +1,5 @@
 ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
    const {player, item, target} = event
-   
    if (target && target.block && target.block.id == 'minecraft:lava' && target.block.properties.level == 0) {
       target.block.set('minecraft:air')
       item.count--

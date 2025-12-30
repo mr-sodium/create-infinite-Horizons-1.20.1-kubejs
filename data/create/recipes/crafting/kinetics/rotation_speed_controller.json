@@ -16,12 +16,15 @@
     },
     "C":{
       "item": "createtransmission:transmission_chain"
+    },
+    "N":{
+      "item": "kubejs:brass_pipe"
     }
   },
   "pattern": [
     "SCS",
-    "SPS",
-    "HBH"
+    "BPB",
+    "HNH"
   ],
   "result": {
     "item": "create:rotation_speed_controller"

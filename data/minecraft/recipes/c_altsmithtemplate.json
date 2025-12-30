@@ -9,13 +9,16 @@
         "item": "minecraft:netherrack"
     },
     "C": {
+      "item": "minecraft:diamond_block"
+    },
+    "L": {
       "item": "minecraft:echo_shard"
     }
   },
   "pattern": [
-    "N",
-    "A",
-    "C"
+    " N ",
+    "ALA",
+    " C "
   ],
   "result": {
     "item": "minecraft:netherite_upgrade_smithing_template",

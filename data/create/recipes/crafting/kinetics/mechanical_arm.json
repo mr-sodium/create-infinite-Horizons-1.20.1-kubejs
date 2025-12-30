@@ -6,10 +6,7 @@
         "item": "artifacts:universal_attractor"
     },
     "S": {
-        "item": "create:brass_sheet"
-    },
-    "B": {
-        "item": "create:brass_block"
+        "item": "kubejs:brass_pipe"
     },
     "C": {
         "item": "supplementaries:cog_block"
@@ -22,7 +19,7 @@
     }
   },
   "pattern": [
-    "BSU",
+    "SSU",
     "C  ",
     "PA "
   ],

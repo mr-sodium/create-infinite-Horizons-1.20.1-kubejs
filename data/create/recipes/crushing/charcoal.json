@@ -1,0 +1,18 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "chance": 0.50,
+      "item": "kubejs:carbon_dust"
+    },
+    {
+      "item": "kubejs:carbon_dust"
+    }
+  ]
+}
