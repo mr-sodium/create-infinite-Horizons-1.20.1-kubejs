@@ -11,5 +11,6 @@ PlayerEvents.tick(event => {
     if (player.level.isClientSide()) return
         if (player.mainHandItem.id == lava_burn || player.offHandItem.id == lava_burn) {
         player.setSecondsOnFire(3)
+        player.getSlot(player.selectedSlot).set('minecraft:air');
     }    
 })
