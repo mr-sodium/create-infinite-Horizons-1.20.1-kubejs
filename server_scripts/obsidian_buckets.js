@@ -1,13 +1,24 @@
 ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
    const {player, item, target} = event
    
-   if (target && target.block && target.block.id == 'minecraft:lava' && target.block.properties.level == 0) {
-      target.block.set('minecraft:air')
-      item.count--
-      player.give('kubejs:obsidian_lava_bucket')
-      player.swing()
-      event.cancel()
+   if (player.creative) {
+      if (target && target.block && target.block.id == 'minecraft:lava' && target.block.properties.level == 0) {
+         target.block.set('minecraft:air')
+         player.give('kubejs:obsidian_lava_bucket')
+         player.swing()
+         event.cancel()
+      }
    }
+   if (!player.creative) {
+      if (target && target.block && target.block.id == 'minecraft:lava' && target.block.properties.level == 0) {
+         target.block.set('minecraft:air')
+         item.count--
+         player.give('kubejs:obsidian_lava_bucket')
+         player.swing()
+         event.cancel()
+      }
+   }
+
    if (target && target.block && target.block.id == 'minecraft:water' && target.block.properties.level == 0) {
       target.block.set('minecraft:air')
       item.count--
