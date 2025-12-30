@@ -1,18 +1,18 @@
 ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
-   const {player,level} = event;
+   const {player,level} = event
    
    const dist = 4.5
-   const blockpicked = player.rayTrace(dist).block;
+   const blockpicked = player.rayTrace(dist).block
 
    if (blockpicked.id == 'minecraft:lava'&& blockpicked.properties.level <= 0){
    player.rayTrace(dist).block.set('minecraft:air')
-   player.getSlot(player.selectedSlot).set('kubejs:obsidian_lava_bucket');
-   return;
+   player.getSlot(player.selectedSlot).set('kubejs:obsidian_lava_bucket')
+   return
    }
    if (blockpicked.id == 'minecraft:water'&& blockpicked.properties.level <= 0){
    player.rayTrace(dist).block.set('minecraft:air')
-   player.getSlot(player.selectedSlot).set('kubejs:obsidian_water_bucket');
-   return;
+   player.getSlot(player.selectedSlot).set('kubejs:obsidian_water_bucket')
+   return
    }
 })
 
@@ -20,7 +20,7 @@ ItemEvents.rightClicked('kubejs:obsidian_lava_bucket', event => {
    const { player } = event
 
    const dist = 4.5
-   const dir = player.facing;
+   const dir = player.facing
 
    if(dir == 'north'){
       if(   player.rayTrace(dist).block.offset(0,0,1) == 'minecraft:air'){
