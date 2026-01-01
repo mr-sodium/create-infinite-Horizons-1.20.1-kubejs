@@ -1,0 +1,56 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "mca:rose_gold_ingot"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "kubejs:rose_gold_sheet"
+    }
+  ],
+  "sequence": [ 
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mca:rose_gold_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "mca:rose_gold_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mca:rose_gold_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "mca:rose_gold_ingot"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mca:rose_gold_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "mca:rose_gold_ingot"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "mca:rose_gold_ingot"
+  }
+}
