@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mca:blueprint"
+    }
+  },
+  "pattern": [
+    "A"
+  ],
+  "result": {
+    "item": "create:empty_schematic"
+  },
+  "show_notification": true
+}
