@@ -11,14 +11,8 @@ PlayerEvents.tick(event => {
     
     if (!player.creative) {
         if (player.mainHandItem.id == lava_burn || player.offHandItem.id == lava_burn) {
-<<<<<<< Updated upstream
         player.setSecondsOnFire(3)
-        player.getSlot(player.selectedSlot).set('minecraft:air');
+        player.getSlot(player.selectedSlot).set('minecraft:air')
+        }
     }    
-=======
-            player.getSlot(player.selectedSlot).set('minecraft:air')
-            player.setSecondsOnFire(3)
-        } 
-    }
->>>>>>> Stashed changes
 })
