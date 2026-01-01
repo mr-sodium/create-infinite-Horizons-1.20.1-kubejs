@@ -1,11 +1,11 @@
 PlayerEvents.tick(event => {
     const {player} = event
-    const burn_baby_burn = 'kubejs:blazing_upgrade_template'
+    const template_burn = 'kubejs:blazing_upgrade_template'
     const lava_burn = 'minecraft:lava_bucket'
 
     if (player.level.isClientSide()) return
 
-    if (player.mainHandItem.id == burn_baby_burn || player.offHandItem.id == burn_baby_burn) {
+    if (player.mainHandItem.id == template_burn || player.offHandItem.id == template_burn) {
         player.setSecondsOnFire(2)
     }
     if (!player.creative) {
