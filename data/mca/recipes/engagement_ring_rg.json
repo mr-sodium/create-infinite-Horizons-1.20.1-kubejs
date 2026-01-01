@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "B": {
+      "item": "kubejs:rose_gold_sheet"
+    }
+  },
+  "pattern": [
+    "BAB",
+    "B B",
+    "BBB"
+  ],
+  "result": {
+    "item": "mca:engagement_ring_rg"
+  },
+  "show_notification": true
+}
