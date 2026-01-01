@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "kubejs:obsidian_water_bucket"
+    }
+  ],
+  "results": [
+    {
+      "id": "kubejs:obsidian_bucket"
+    },
+    {
+      "amount": 1000,
+      "id": "minecraft:water"
+    }
+  ]
+}
