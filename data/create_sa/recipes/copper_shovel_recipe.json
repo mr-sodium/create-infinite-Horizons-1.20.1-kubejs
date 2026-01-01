@@ -2,19 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " NN",
-    " AN",
-    "A "
+    " CN",
+    "C  "
   ],
   "key": {
-    "0": {
+    "N": {
       "item": "create:copper_sheet"
     },
-    "1":{
-      "tag": "forge:rods/wooden"
+    "C":{
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "create_sa:copper_shovel",
-    "count": 1
+    "item": "create_sa:copper_shovel"
   }
 }
