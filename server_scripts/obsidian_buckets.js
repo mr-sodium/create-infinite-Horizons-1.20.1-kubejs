@@ -130,7 +130,12 @@ ItemEvents.rightClicked('kubejs:obsidian_powder_snow_bucket', event => {
          item.count--
          player.give('kubejs:obsidian_bucket')
       }
-      if (target.type == 'BLOCK' && target.block.id != 'minecraft:lava') {
+      if (target.block.id == 'minecraft:water') {
+         target.block.set('minecraft:powder_snow')
+         item.count--
+         player.give('kubejs:obsidian_bucket')
+      }
+      if (target.type == 'BLOCK' && target.block.id != 'minecraft:lava' && target.block.id != 'minecraft:water') {
          let placePos = target.block.pos.relative(target.facing)
          level.getBlock(placePos).set('minecraft:powder_snow')
          item.count--
@@ -142,7 +147,10 @@ ItemEvents.rightClicked('kubejs:obsidian_powder_snow_bucket', event => {
       if (target.block.id == 'minecraft:lava') {
          target.block.set('minecraft:powder_snow')
       }
-      if (target.type == 'BLOCK' && target.block.id != 'minecraft:lava') {
+      if (target.block.id == 'minecraft:water') {
+         target.block.set('minecraft:powder_snow')
+      }
+      if (target.type == 'BLOCK' && target.block.id != 'minecraft:lava' && target.block.id != 'minecraft:water') {
          let placePos = target.block.pos.relative(target.facing)
          level.getBlock(placePos).set('minecraft:powder_snow')
       }
