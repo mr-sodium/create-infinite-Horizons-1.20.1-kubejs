@@ -13,9 +13,9 @@
     }
   },
   "pattern": [
-    " A ",
-    " C ",
-    " S "
+    "A",
+    "C",
+    "S"
   ],
   "result": {
     "item": "create:millstone"
