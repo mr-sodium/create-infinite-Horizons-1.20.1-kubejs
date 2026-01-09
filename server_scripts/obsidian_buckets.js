@@ -129,32 +129,40 @@ ItemEvents.rightClicked('kubejs:obsidian_powder_snow_bucket', event => {
          target.block.set('minecraft:powder_snow')
          item.count--
          player.give('kubejs:obsidian_bucket')
+         player.swing()
+         event.cancel()
       }
       if (target.block.id == 'minecraft:water') {
          target.block.set('minecraft:powder_snow')
          item.count--
          player.give('kubejs:obsidian_bucket')
+         player.swing()
+         event.cancel()
       }
       if (target.type == 'BLOCK' && target.block.id != 'minecraft:lava' && target.block.id != 'minecraft:water') {
          let placePos = target.block.pos.relative(target.facing)
          level.getBlock(placePos).set('minecraft:powder_snow')
          item.count--
          player.give('kubejs:obsidian_bucket')
+         player.swing()
+         event.cancel()
       }
-      player.swing()
-      event.cancel()
    } else {
       if (target.block.id == 'minecraft:lava') {
          target.block.set('minecraft:powder_snow')
+         player.swing()
+         event.cancel()
       }
       if (target.block.id == 'minecraft:water') {
          target.block.set('minecraft:powder_snow')
+         player.swing()
+         event.cancel()
       }
       if (target.type == 'BLOCK' && target.block.id != 'minecraft:lava' && target.block.id != 'minecraft:water') {
          let placePos = target.block.pos.relative(target.facing)
          level.getBlock(placePos).set('minecraft:powder_snow')
+         player.swing()
+         event.cancel()
       }
-      player.swing()
-      event.cancel()
    }
 })
