@@ -1,5 +1,6 @@
 StartupEvents.modifyCreativeTab('kubejs:tab', event => {
 	event.displayName = ('Creating: Infinite Horizons')
+	event.remove('kubejs:mimic_spawn_egg')
 })
 
 StartupEvents.modifyCreativeTab('artifacts:main', event => {
