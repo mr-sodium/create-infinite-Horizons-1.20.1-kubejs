@@ -18,3 +18,11 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
         event.cancel()
     }
 })
+
+
+
+    const placeMap = {
+        'kubejs:obsidian_water_bucket': 'minecraft:water',
+        'kubejs:obsidian_lava_bucket': 'minecraft:lava',
+        'kubejs:obsidian_powder_snow_bucket': 'minecraft:powder_snow'
+    }
