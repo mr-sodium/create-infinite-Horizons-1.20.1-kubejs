@@ -6,12 +6,12 @@ PlayerEvents.tick(event => {
     if (player.level.isClientSide()) return
 
     if (player.mainHandItem.id == template_burn || player.offHandItem.id == template_burn) {
-        player.setSecondsOnFire(2)
+        player.setSecondsOnFire(4)
     }
     if (!player.creative) {
         if (player.mainHandItem.id == lava_burn || player.offHandItem.id == lava_burn) {
         player.getSlot(player.selectedSlot).set('minecraft:air')
-        player.setSecondsOnFire(3)
+        player.setSecondsOnFire(4)
         }
     }    
 })
