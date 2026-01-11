@@ -1,5 +1,5 @@
 BlockEvents.rightClicked(event => {
-    const { item, block, level, player, hand } = event
+    const {item, block, level, player} = event
 
     if (item.id == 'kubejs:mimic_spawn_egg') {
 
