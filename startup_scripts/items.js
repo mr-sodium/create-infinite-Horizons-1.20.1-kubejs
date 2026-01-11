@@ -11,4 +11,5 @@ StartupEvents.registry('item', event => {
     event.create('obsidian_powder_snow_bucket').displayName('Obsidian Powder Snow Bucket').maxStackSize(1)
     event.create('obsidian_milk_bucket').displayName('Obsidian Milk Bucket').maxStackSize(1)
     event.create('rose_gold_sheet').displayName('Rose Gold Sheet')
+    event.create('mimic_spawn_egg').displayName('Mimic Spawn Egg')
 })
