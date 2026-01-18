@@ -9,39 +9,39 @@
   "results": [
     {
       "chance": 0.25,
-      "id": "minecraft:flint"
+      "item": "minecraft:flint"
     },
     {
       "chance": 0.5,
-      "id": "minecraft:iron_nugget"
+      "item": "minecraft:iron_nugget"
     },
     {
       "chance": 0.5,
-      "id": "minecraft:gold_nugget"
+      "item": "minecraft:gold_nugget"
     },
     {
       "chance": 0.5,
-      "id": "create:copper_nugget"
+      "item": "create:copper_nugget"
     },
     {
       "chance": 0.5,
-      "id": "create:zinc_nugget"
+      "item": "create:zinc_nugget"
     },
     {
       "chance": 0.5,
-      "id": "createdeco:industrial_iron_nugget"
+      "item": "createdeco:industrial_iron_nugget"
     },
     {
       "chance": 0.005,
-      "id": "kubejs:diamond_nuggie"
+      "item": "kubejs:diamond_nuggie"
     },
     {
       "chance": 0.005,
-      "id": "dungeonnowloading:durite"
+      "item": "dungeonnowloading:durite"
     },
     {
       "chance": 0.0005,
-      "id": "bygonenether:netherite_scrap_nugget"
+      "item": "bygonenether:netherite_scrap_nugget"
     }
   ]
 }
