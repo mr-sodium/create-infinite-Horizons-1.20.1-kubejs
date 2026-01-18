@@ -1,21 +1,24 @@
-// KubeJS server script to set Ender Dragon max health to 1000
+const BASE_DRAGON_HEALTH = 500
 
 EntityEvents.spawned(event => {
   const entity = event.entity
-  const Dhealth = 1000
 
-  // Check if the spawned entity is the Ender Dragon
   if (entity.type == "minecraft:ender_dragon") {
-    console.log("ENDERDRAGON SPAWNED")
-
-    // Get the generic max health attribute
     const maxHealthAttr = entity.getAttribute("minecraft:generic.max_health")
 
     if (maxHealthAttr) {
-      maxHealthAttr.baseValue = Dhealth
+      const playerCount = Math.max(1, event.server.players.size())
 
-      // Also heal the dragon to full after changing health
-      entity.health = Dhealth
+      let newHealth
+
+      if (playerCount > 10) {
+        newHealth = BASE_DRAGON_HEALTH * 10
+      } else {
+        newHealth = BASE_DRAGON_HEALTH * playerCount
+      }
+
+      maxHealthAttr.baseValue = newHealth
+      entity.health = newHealth
     }
-   }
- })
+  }
+})
