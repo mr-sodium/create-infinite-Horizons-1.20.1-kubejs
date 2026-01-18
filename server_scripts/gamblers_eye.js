@@ -41,7 +41,7 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
         player.give(Item.of('endrem:undead_eye'))
     }
     if(result == 12){
-        player.give(Item.of('minecraft:tnt'))
+        player.give(Item.of('endrem:cold_eye'))
     }
     if(result == 13){
         player.give(Item.of('minecraft:ender_eye'))
