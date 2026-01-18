@@ -1,7 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "redstone",
-  "group": "wooden_button",
+  "type": "create:mixing",
   "ingredients": [
     {
       "item": "minecraft:quartz"
@@ -11,9 +9,14 @@
     },
     {
       "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:redstone"
     }
   ],
-  "result": {
-    "item": "kubejs:rose_quartz_dust"
-  }
-}
+  "results": [
+    {
+      "item": "kubejs:rose_quartz_dust"
+    }
+  ]
+} 
