@@ -1,6 +1,6 @@
 
 const BASE_DRAGON_HEALTH = 500
-
+const maxplayercount = 10
 EntityEvents.spawned(event => {
   const entity = event.entity
 
@@ -13,8 +13,8 @@ EntityEvents.spawned(event => {
 
       let newHealth
 
-      if (playerCount > 10) {
-        newHealth = BASE_DRAGON_HEALTH * 10
+      if (playerCount > maxplayercount) {
+        newHealth = BASE_DRAGON_HEALTH * maxplayercount
       } else {
         newHealth = BASE_DRAGON_HEALTH * playerCount
       }
