@@ -2,7 +2,7 @@
 
 EntityEvents.spawned(event => {
   const entity = event.entity
-  const Dhealth = 200
+  const Dhealth = 1000
 
   // Check if the spawned entity is the Ender Dragon
   if (entity.type == "minecraft:ender_dragon") {
