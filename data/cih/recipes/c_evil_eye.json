@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "minecraft:ender_eye"
+    },
+    "B": {
+        "item": "minecraft:iron_sword"
+    },
+    "C": {
+      "item": "kubejs:mimic_spawn_egg"
+    },
+    "D": {
+      "item": "numismatics:crown"
+    },
+    "E": {
+      "item": "supplementaries:statue"
+    }
+  },
+  "pattern": [
+    " D ",
+    "BAE",
+    " C "
+  ],
+  "result": {
+    "item": "endrem:evil_eye"
+  },
+  "show_notification": false
+}

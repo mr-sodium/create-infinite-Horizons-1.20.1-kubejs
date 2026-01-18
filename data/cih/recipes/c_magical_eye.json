@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "minecraft:ender_eye"
+    },
+    "B": {
+        "item": "create:experience_nugget"
+    },
+    "C": {
+        "item": "yungscavebiomes:rare_ice"
+    },
+    "D": {
+        "tag": "minecraft:candles"
+    }
+  },
+  "pattern": [
+    " B ",
+    "DAD",
+    " C "
+  ],
+  "result": {
+    "item": "endrem:magical_eye"
+  },
+  "show_notification": false
+}

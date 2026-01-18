@@ -11,4 +11,5 @@ BlockEvents.rightClicked(event => {
         player.swing()
         event.cancel()
     }
+    console.log("fix mimic egg recipe")
 })
