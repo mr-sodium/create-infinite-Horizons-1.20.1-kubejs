@@ -1,0 +1,47 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "create:stone_types/tuff"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "chance": 0.25,
+      "id": "minecraft:flint"
+    },
+    {
+      "chance": 0.5,
+      "id": "minecraft:iron_nugget"
+    },
+    {
+      "chance": 0.5,
+      "id": "minecraft:gold_nugget"
+    },
+    {
+      "chance": 0.5,
+      "id": "create:copper_nugget"
+    },
+    {
+      "chance": 0.5,
+      "id": "create:zinc_nugget"
+    },
+    {
+      "chance": 0.5,
+      "id": "createdeco:industrial_iron_nugget"
+    },
+    {
+      "chance": 0.005,
+      "id": "kubejs:diamond_nuggie"
+    },
+    {
+      "chance": 0.005,
+      "id": "dungeonnowloading:durite"
+    },
+    {
+      "chance": 0.0005,
+      "id": "bygonenether:netherite_scrap_nugget"
+    }
+  ]
+}
