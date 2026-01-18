@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+   
+    "N"
+    
+  ],
+  "result": {
+    "item": "kubejs:diamond_nuggie",
+    "count": 9
+  },
+  "show_notification": true
+}
