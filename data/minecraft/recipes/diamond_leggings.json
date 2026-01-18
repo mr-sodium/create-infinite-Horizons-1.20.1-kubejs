@@ -9,7 +9,7 @@
       "item": "minecraft:diamond"
     },
     "C": {
-      "item": "diamond_nuggets:diamond_nugget"
+      "item": "kubejs:diamond_nuggie"
     }
   },
   "pattern": [
