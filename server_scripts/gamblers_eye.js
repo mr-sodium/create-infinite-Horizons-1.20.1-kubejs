@@ -2,8 +2,7 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
     let result = Math.floor(Math.random() * 13) + 1
     const player = event.player 
     const item = event.item
-    console.log(result)
-    //
+
     if (!player.creative) {
         item.shrink(1)
     }
