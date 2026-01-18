@@ -46,6 +46,13 @@ ItemEvents.rightClicked(event => {
             return
         }
 
+        // Prevent stacking the same fluid directly on top of itself
+        const belowBlock = level.getBlock(placePos.offset(0, -1, 0))
+        if (belowBlock && belowBlock.id == fluidToPlace) {
+            event.cancel()
+            return
+        }
+
         if (targetBlock.id == 'minecraft:air' || targetBlock.canBeReplaced()) {
 >>>>>>> Stashed changes
             targetBlock.set(fluidToPlace)
