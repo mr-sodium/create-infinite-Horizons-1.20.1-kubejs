@@ -31,33 +31,29 @@ ItemEvents.rightClicked(event => {
 
     const fluidToPlace = placeMap[item.id]
 
-    if (fluidToPlace) {
-        const placePos = target.block.offset(target.facing)
-        const targetBlock = level.getBlock(placePos)
-<<<<<<< Updated upstream
-        
-        if (targetBlock.id == 'minecraft:air' && target.block.properties.level != 0 || targetBlock.canBeReplaced()) {
-=======
+    if (target.block.id == fluidToPlace && target.block.properties.level != 0) {
+        target.block.set(fluidToPlace)
+        player.swing()
+        event.cancel()
+    }
 
-        // Prevent stacking the same fluid directly on top of itself
-        const belowBlock = level.getBlock(placePos.offset(0, -1, 0))
-        if (belowBlock && belowBlock.id == fluidToPlace) {
-            event.cancel()
-            return
-        }
+    const placePos = target.block.offset(target.facing)
+    const targetBlock = level.getBlock(placePos)
+    const belowBlock = level.getBlock(placePos.offset(0, -1, 0))
 
-        // Prevent stacking the same fluid directly on top of itself
-        const belowBlock = level.getBlock(placePos.offset(0, -1, 0))
-        if (belowBlock && belowBlock.id == fluidToPlace) {
-            event.cancel()
-            return
-        }
+    if (belowBlock && belowBlock.id == fluidToPlace && target.block.id != 'minecraft:powder_snow') {
+        event.cancel()
+        return
+    }
 
-        if (targetBlock.id == 'minecraft:air' || targetBlock.canBeReplaced()) {
->>>>>>> Stashed changes
-            targetBlock.set(fluidToPlace)
-            player.swing()
-            event.cancel()
-        }
+    if (targetBlock.id == fluidToPlace && targetBlock.properties.level != 0) {
+        targetBlock.set(fluidToPlace)
+        player.swing()
+        event.cancel()
+    } 
+    else if (targetBlock.id == 'minecraft:air' || targetBlock.canBeReplaced()) {
+        targetBlock.set(fluidToPlace)
+        player.swing()
+        event.cancel()
     }
 })
