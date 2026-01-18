@@ -34,8 +34,8 @@ ItemEvents.rightClicked(event => {
     if (fluidToPlace) {
         const placePos = target.block.offset(target.facing)
         const targetBlock = level.getBlock(placePos)
-
-        if (targetBlock.id == 'minecraft:air' || targetBlock.canBeReplaced()) {
+        
+        if (targetBlock.id == 'minecraft:air' && target.block.properties.level != 0 || targetBlock.canBeReplaced()) {
             targetBlock.set(fluidToPlace)
             player.swing()
             event.cancel()
