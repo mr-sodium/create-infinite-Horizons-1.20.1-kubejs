@@ -2,26 +2,26 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-        "item": "minecraft:ender_eye"
+    "N": {
+        "item": "yungscavebiomes:frost_lily"
     },
-    "B": {
-        "item": "create:experience_nugget"
+    "A": {
+        "item": "minecraft:blue_ice"
     },
     "C": {
         "item": "yungscavebiomes:rare_ice"
     },
-    "D": {
-        "tag": "minecraft:candles"
+    "L": {
+        "item": "minecraft:ender_eye"
     }
   },
   "pattern": [
-    " B ",
-    "DAD",
-    " C "
+    "NAN",
+    "CLC",
+    "NAN"
   ],
   "result": {
-    "item": "endrem:magical_eye"
+    "item": "endrem:cold_eye"
   },
   "show_notification": false
 }
