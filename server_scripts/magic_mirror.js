@@ -3,7 +3,7 @@ ItemEvents.rightClicked(event => {
   const item = event.item
   const spawnPos = player.getRespawnPosition()
 
-  const dimension = player.level.dimension.toString();
+  const dimension = player.level.dimension.toString()
 
 
   //blake this checks if you hold thing
@@ -29,7 +29,6 @@ ItemEvents.rightClicked(event => {
     )}
     // put damage item code here
   }else{
-    event.server.runCommand(`/playsound block.beacon.deactivate master @p ${player.x} ${player.y} ${player.z} 2 0.9`);
-
+    event.server.runCommand(`/playsound block.beacon.deactivate master @p ${player.x} ${player.y} ${player.z} 2 0.9`)
   }
 })
