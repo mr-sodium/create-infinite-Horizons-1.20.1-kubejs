@@ -13,4 +13,5 @@ StartupEvents.registry('item', event => {
     event.create('rose_gold_sheet').displayName('Rose Gold Sheet')
     event.create('mimic_spawn_egg').displayName('Mimic Spawn Egg')
     event.create('diamond_nuggie').displayName('Diamond Nugget')
+    event.create('magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('epic').glow(true).maxDamage(4)
 })
