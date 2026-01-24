@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "create:iron_sheet"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "minecraft:iron_block"
+    },
+    "L": {
+      "item": "create_sa:zinc_handle"
+    }
+  },
+  "pattern": [
+    " N ",
+    "NAN",
+    "LC "
+  ],
+  "result": {
+    "item": "kubejs:magic_mirror"
+  },
+  "show_notification": false
+}
