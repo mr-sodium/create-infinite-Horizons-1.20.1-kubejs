@@ -16,5 +16,5 @@ StartupEvents.registry('item', event => {
     event.create('magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('epic')
     event.create('cracked_magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('rare')
     event.create('damaged_magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('rare')
-    event.create('broken_magic_mirror').displayName('broken Magic Mirror').maxStackSize(1)
+    event.create('broken_magic_mirror').displayName('Broken Magic Mirror').maxStackSize(1)
 })
