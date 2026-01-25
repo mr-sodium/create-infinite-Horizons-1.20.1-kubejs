@@ -24,6 +24,7 @@ ItemEvents.rightClicked(event => {
     event.server.runCommand(`/playsound minecraft:block.amethyst_block.step master @p ${player.x} ${player.y} ${player.z} 1 1.3`)
     event.server.runCommand(`/playsound minecraft:block.bone_block.place master @p ${player.x} ${player.y} ${player.z} 3 2`)
     event.server.runCommand(`/playsound minecraft:block.amethyst_block.break master @p ${player.x} ${player.y} ${player.z} 1 0.2`)
+    
     if(!player.creative){
       if(item.id == "kubejs:magic_mirror"){
         player.setItemInHand(hand, Item.of("kubejs:cracked_magic_mirror"))
