@@ -6,7 +6,7 @@ ItemEvents.rightClicked(event => {
   if (item.id !== "kubejs:magic_mirror" && item.id !== "kubejs:damaged_magic_mirror" && item.id !== "kubejs:broken_magic_mirror" && item.id !== "kubejs:cracked_magic_mirror") {
     return
   }
-  event.server.runCommand(`gamerule commandBlockOutput false`)
+  event.server.runCommand(`gamerule sendCommandFeedback false`)
   if (dimension == "minecraft:overworld" && item.id !== "kubejs:broken_magic_mirror"){
     if (!spawnPos) {
       let newspawnPos = player.level.getSharedSpawnPos()
