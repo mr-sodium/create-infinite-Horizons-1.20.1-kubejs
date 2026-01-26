@@ -10,11 +10,13 @@ ItemEvents.rightClicked(event => {
   "kubejs:broken_magic_mirror"
   ]
 
+  if (hand !== 'MAIN_HAND') return
+
   if (!mirrors.includes(item.id) || respawnDim !== "minecraft:overworld") {
     return
   }
 
-  event.server.runCommand(`gamerule sendCommandFeedback false`)
+  event.server.runCommand(`/gamerule sendCommandFeedback false`)
 
   player.addItemCooldown(item.id, 600)
   
