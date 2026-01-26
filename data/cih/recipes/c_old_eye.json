@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "minecraft:ender_eye"
+    },
+    "B": {
+        "item": "minecraft:gold_block"
+    },
+    "C": {
+      "item": "yungscavebiomes:ancient_sand"
+    },
+    "D": {
+      "item": "supplementaries:hourglass"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "DAD",
+    "BCB"
+  ],
+  "result": {
+    "item": "endrem:old_eye"
+  },
+  "show_notification": false
+}

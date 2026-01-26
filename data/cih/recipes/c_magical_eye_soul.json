@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "supplementaries:sconce_soul"
+    },
+    "A": {
+        "tag": "minecraft:candles"
+    },
+    "C": {
+        "item": "minecraft:ender_eye"
+    }
+  },
+  "pattern": [
+    " N ",
+    "ACA",
+    " N "
+  ],
+  "result": {
+    "item": "endrem:magical_eye"
+  },
+  "show_notification": false
+}

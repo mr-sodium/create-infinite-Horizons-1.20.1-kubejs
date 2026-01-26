@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:diamond_block"
+    },
+    "A": {
+        "item": "minecraft:emerald"
+    },
+    "C": {
+        "tag": "minecraft:c_eeyes"
+    },
+    "L":{
+        "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " N ",
+    "ACA",
+    " L "
+  ],
+  "result": {
+    "item": "kubejs:gamblers_eye"
+  },
+  "show_notification": false
+}
