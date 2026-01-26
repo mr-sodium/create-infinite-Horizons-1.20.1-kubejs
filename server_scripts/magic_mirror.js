@@ -1,12 +1,23 @@
 ItemEvents.rightClicked(event => {
   const {player, item, hand} = event
   const spawnPos = player.getRespawnPosition()
+  const respawnDim = player.getRespawnDimension()
   const dimension = player.level.dimension.toString()
+  const mirrors = [
+  "kubejs:magic_mirror",
+  "kubejs:cracked_magic_mirror",
+  "kubejs:damaged_magic_mirror",
+  "kubejs:broken_magic_mirror"
+  ]
 
-  if (item.id !== "kubejs:magic_mirror" && item.id !== "kubejs:damaged_magic_mirror" && item.id !== "kubejs:broken_magic_mirror" && item.id !== "kubejs:cracked_magic_mirror") {
+  if (!mirrors.includes(item.id) || respawnDim !== "minecraft:overworld") {
     return
   }
+
   event.server.runCommand(`gamerule sendCommandFeedback false`)
+
+  player.addItemCooldown(item.id, 600)
+  
   if (dimension == "minecraft:overworld" && item.id !== "kubejs:broken_magic_mirror"){
     if (!spawnPos) {
       let newspawnPos = player.level.getSharedSpawnPos()
