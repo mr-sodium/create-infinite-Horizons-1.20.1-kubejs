@@ -1,11 +1,17 @@
 ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
-    let result = Math.floor(Math.random() * 13) + 1
+    let result = Math.floor(Math.random() * 14) + 1
+    let r2 = Math.floor(Math.random() * 2) + 1
     const player = event.player 
     const item = event.item
-
+    const cooldowntime = 30
+///playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.4
+    event.server.runCommand(`/playsound minecraft:block.note_block.chime master @p ${player.x} ${player.y} ${player.z} 1.2 1.4`)
+    event.server.runCommand(`/playsound minecraft:block.anvil.destroy master @p ${player.x} ${player.y} ${player.z} 0.3 2`)
+    //
     if (!player.creative) {
         item.shrink(1)
     }
+    player.addItemCooldown("kubejs:gamblers_eye", cooldowntime)
     if(result == 1){
         player.give(Item.of('endrem:exotic_eye'))
     }
@@ -45,4 +51,15 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
     if(result == 13){
         player.give(Item.of('minecraft:ender_eye'))
     }
+    if(result == 14){
+        if(r2 == 1){
+            player.give(Item.of('minecraft:ender_eye'))
+        }else{
+            event.server.runCommand(`/summon minecraft:tnt ${player.x} ${player.y} ${player.z} {Fuse:240s}`)
+        }
+        
+        
+    }
 })
+
+
