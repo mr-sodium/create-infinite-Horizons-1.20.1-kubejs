@@ -17,7 +17,7 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
         player.give(filledBucketId)
         player.swing()
         if (targetBlockId == 'minecraft:water') {
-            event.server.runCommand(`/playsound minecraft:item.bucket.fill master @p ${player.x} ${player.y} ${player.z} 1 1`)
+            event.target.playSound('minecraft:item.bucket.fill')
         }
         if (targetBlockId == 'minecraft:lava') {
             event.server.runCommand(`/playsound minecraft:item.bucket.fill_lava master @p ${player.x} ${player.y} ${player.z} 1 1`)
@@ -78,4 +78,13 @@ ItemEvents.rightClicked(event => {
         }
         event.cancel()
     }
+})
+
+ItemEvents.entityInteracted('kubejs:obsidian_bucket', event => {
+    const {item, player, target} = event
+
+    if(event.target.type != 'minecraft:cow') return
+    item.shrink(1)
+    player.giveInHand('kubejs:obsidian_milk_bucket')
+    target.playSound('minecraft:entity.cow.milk')
 })
