@@ -59,3 +59,4 @@ ItemEvents.rightClicked(event => {
     player.addItemCooldown("kubejs:broken_magic_mirror", cooldowntime)
   }
 })
+//🜔
