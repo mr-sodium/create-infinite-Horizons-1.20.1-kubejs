@@ -9,6 +9,7 @@ StartupEvents.registry('item', event => {
     event.create('obsidian_lava_bucket').displayName('Obsidian Lava Bucket').maxStackSize(1)
     event.create('obsidian_water_bucket').displayName('Obsidian Water Bucket').maxStackSize(1)
     event.create('obsidian_powder_snow_bucket').displayName('Obsidian Powder Snow Bucket').maxStackSize(1)
+    
     event.create('obsidian_milk_bucket').displayName('Obsidian Milk Bucket').useAnimation('drink')
         .food(food => {
             food.hunger(0)
@@ -20,6 +21,7 @@ StartupEvents.registry('item', event => {
                     context.player.potionEffects.clear()
                 })
         }).maxStackSize(1)
+
     event.create('rose_gold_sheet').displayName('Rose Gold Sheet')
     event.create('mimic_spawn_egg').displayName('Mimic')
     event.create('diamond_nuggie').displayName('Diamond Nugget')
