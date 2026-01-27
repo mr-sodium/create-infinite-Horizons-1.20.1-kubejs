@@ -31,8 +31,6 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
 
 ItemEvents.rightClicked(event => {
     const { item, target, player, level } = event
-    const targetBlockId = target.block.id
-    const fluidState = target.block.properties.level
     const placeMap = {
         'kubejs:obsidian_water_bucket': 'minecraft:water',
         'kubejs:obsidian_lava_bucket': 'minecraft:lava',
@@ -43,7 +41,7 @@ ItemEvents.rightClicked(event => {
     if (!fluidToPlace) return
 
     let placed = false 
-    if (targetBlockId == fluidToPlace && fluidState != 0) {
+    if (target.block.id == fluidToPlace && target.block.properties.level != 0) {
         target.block.set(fluidToPlace)
         player.swing()
         placed = true
@@ -52,7 +50,7 @@ ItemEvents.rightClicked(event => {
         const targetBlock = level.getBlock(placePos)
         const belowBlock = level.getBlock(placePos.offset(0, -1, 0))
 
-        if (belowBlock && belowBlock.id == fluidToPlace && targetBlockId != 'minecraft:powder_snow') {
+        if (belowBlock && belowBlock.id == fluidToPlace && target.block.id != 'minecraft:powder_snow') {
             return
         }
 
