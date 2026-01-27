@@ -24,4 +24,3 @@ EntityEvents.spawned(event => {
     }
   }
 })
-//🜔
