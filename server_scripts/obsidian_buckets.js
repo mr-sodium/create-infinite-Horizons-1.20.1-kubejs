@@ -82,7 +82,6 @@ ItemEvents.rightClicked(event => {
     }
 })
 
-// Stolen kubejs wiki code😭:
 ItemEvents.entityInteracted('kubejs:obsidian_bucket', event => {
     const {item, player, target} = event
 
