@@ -3,7 +3,7 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
     let r2 = Math.floor(Math.random() * 2) + 1
     const player = event.player 
     const item = event.item
-    const cooldowntime = 30
+    const cooldowntime = 12
 
     event.server.runCommand(`/playsound minecraft:block.note_block.chime block @p ${player.x} ${player.y} ${player.z} 1.2 1.4`)
     event.server.runCommand(`/playsound minecraft:block.anvil.destroy block @p ${player.x} ${player.y} ${player.z} 0.3 2`)
