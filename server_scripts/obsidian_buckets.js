@@ -17,7 +17,7 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
         player.give(filledBucketId)
         player.swing()
         if (targetBlockId == 'minecraft:water') {
-            event.target.playSound('minecraft:item.bucket.fill')
+            event.server.runCommand(`/playsound minecraft:item.bucket.fill master @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
         if (targetBlockId == 'minecraft:lava') {
             event.server.runCommand(`/playsound minecraft:item.bucket.fill_lava master @p ${player.x} ${player.y} ${player.z} 1 1`)

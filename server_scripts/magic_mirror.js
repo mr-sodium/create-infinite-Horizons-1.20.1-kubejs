@@ -11,7 +11,6 @@ ItemEvents.rightClicked(event => {
   "kubejs:broken_magic_mirror"
   ]
   
-
   if (hand !== 'MAIN_HAND') return
 
   if (!mirrors.includes(item.id) || respawnDim !== "minecraft:overworld") {
