@@ -10,7 +10,7 @@ ItemEvents.rightClicked(event => {
   "kubejs:damaged_magic_mirror",
   "kubejs:broken_magic_mirror"
   ]
-  event.server.runCommand(`/gamerule sendCommandFeedback false`)
+  
 
   if (hand !== 'MAIN_HAND') return
 
