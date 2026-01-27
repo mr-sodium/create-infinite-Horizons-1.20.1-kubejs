@@ -30,7 +30,7 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
 })
 
 ItemEvents.rightClicked(event => {
-    const { item, target, player, level } = event
+    const {item, target, player, level} = event
     const targetBlockId = target.block.id
     const fluidState = target.block.properties.level
     const placeMap = {
