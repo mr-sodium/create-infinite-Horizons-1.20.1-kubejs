@@ -1,4 +1,3 @@
-
 const BASE_DRAGON_HEALTH = 500
 const maxplayercount = 10
 EntityEvents.spawned(event => {
@@ -24,4 +23,3 @@ EntityEvents.spawned(event => {
     }
   }
 })
-//🜔

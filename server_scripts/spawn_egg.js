@@ -12,4 +12,3 @@ BlockEvents.rightClicked(event => {
         event.cancel()
     }
 })
-//🜔
