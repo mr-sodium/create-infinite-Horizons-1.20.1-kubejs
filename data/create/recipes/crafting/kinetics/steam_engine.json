@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "create:shaft"
+    },
+    "C": {
+        "tag": "forge:storage_blocks/copper"
+    },
+    "P": {
+        "tag": "forge:plates/gold"
+    },
+    "S": {
+        "item": "create_sa:hydraulic_engine"
+    }
+  },
+  "pattern": [
+    " P ",
+    "ASA",
+    " C "
+  ],
+  "result": {
+    "item": "create:steam_engine"
+  }
+}
