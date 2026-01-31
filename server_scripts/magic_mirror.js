@@ -45,7 +45,8 @@ ItemEvents.rightClicked(event => {
       if(item.id == "kubejs:damaged_magic_mirror"){
         player.setItemInHand(hand, Item.of("kubejs:broken_magic_mirror"))
         event.server.runCommand(`/playsound minecraft:block.glass.break block @p ${player.x} ${player.y} ${player.z} 1.5 0.7`)
-      }}
+      }
+    }
     player.addItemCooldown("kubejs:magic_mirror", cooldowntime)
     player.addItemCooldown("kubejs:cracked_magic_mirror", cooldowntime)
     player.addItemCooldown("kubejs:damaged_magic_mirror", cooldowntime)
