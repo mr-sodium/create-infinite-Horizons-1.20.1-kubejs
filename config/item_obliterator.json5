@@ -1,0 +1,89 @@
+{
+  // -----------------------------------------------------------
+  //              Item Obliterator by ElocinDev
+  // -----------------------------------------------------------
+  //  
+  // How to add items?
+  //   - They are json strings, so you need to separate each
+  //     entry with a comma, except the last
+  //   - If you start an entry with !, it will be treated as a regular expression
+  //     Example: "!minecraft:.*_sword" to disable all swords
+  //  
+  // -----------------------------------------------------------
+  // Do not touch this
+  "configVersion": 2,
+  // -----------------------------------------------------------
+  // Items here will be unusable completely
+  //    Example: minecraft:diamond
+  "blacklisted_items": [
+    "handcrafted:stackable_book",
+    "create_sa:copper_magnet",
+    "create_sa:rose_quartz_pickaxe",
+    "create_sa:rose_quartz_shovel",
+    "kubejs:pepsi",
+    "create_sa:zinc_helmet",
+    "create_sa:zinc_chestplate",
+    "create_sa:zinc_leggings",
+    "create_sa:zinc_boots",
+    "create_sa:zinc_pickaxe",
+    "create_sa:zinc_axe",
+    "create_sa:zinc_sword",
+    "create_sa:zinc_shovel",
+    "create_sa:zinc_hoe",
+    "create_sa:rose_quartz_sword",
+    "create_sa:rose_quartz_axe",
+    "create_sa:andesite_jetpack_chestplate",
+    "create_sa:copper_jetpack_chestplate",
+    "create_sa:andesite_exoskeleton_chestplate",
+    "create_sa:copper_exoskeleton_chestplate",
+    "createdeco:copper_trapdoor",
+    "createaddition:zinc_sheet",
+    "endrem:black_eye",
+    "endrem:cursed_eye",
+    "endrem:rogue_eye",
+    "endrem:lost_eye",
+    "endrem:evil_eye",
+    "waystones:waystone",
+    "waystones:mossy_waystone",
+    "waystones:sandy_waystone",
+    "waystones:deepslate_waystone",
+    "waystones:blackstone_waystone",
+    "waystones:end_stone_waystone",
+    "createutilities:lshaped_gearbox",
+    "createutilities:gearcube"
+  ],
+  // -----------------------------------------------------------
+  // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
+  // Use with caution! This is a very expensive operation and can cause lag if you have a lot of items blacklisted.
+  // 	
+  // 	 Example to disable a regeneration potion: Potion:"minecraft:regeneration"
+  // 	
+  // 	 You can also use regular expressions by starting the value with !
+  "blacklisted_nbt": [],
+  // -----------------------------------------------------------
+  // Items here will not be able to be right-clicked (Interact)
+  //    Example: minecraft:apple
+  "only_disable_interactions": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will not be able to be used to attack
+  //    Example: minecraft:diamond_sword
+  "only_disable_attacks": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will get their recipes disabled
+  // Keep in mind this already is applied to blacklisted items
+  "only_disable_recipes": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // If true, the mod will use a hashset to handle the blacklisted items
+  // This is a more optimized approach only if you have a lot of items blacklisted (20 or more is recommended)
+  // If you just have a small amount of items blacklisted, keep this false
+  //  
+  // [!] Enabling this will disable all regular expressions
+  // [!] Does not apply to NBT, only item blacklist / interaction / attack
+  "use_hashmap_optimizations": false
+}
