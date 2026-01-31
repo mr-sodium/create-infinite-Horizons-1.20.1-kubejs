@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:copper_sheet"
+    },
+    "A": {
+        "item": "createdeco:zinc_sheet"
+    },
+    "C": {
+        "item": "minecraft:redstone_torch"
+    }
+  },
+  "pattern": [
+    "N",
+    "A",
+    "C"
+  ],
+  "result": {
+    "item": "createaddition:capacitor"
+  },
+  "show_notification": true
+}

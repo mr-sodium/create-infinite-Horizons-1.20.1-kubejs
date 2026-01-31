@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "N": {
-        "item": "create:iron_sheet"
+        "item": "createdeco:zinc_sheet"
     }
   },
   "pattern": [
@@ -11,7 +11,7 @@
     "NNN"
   ],
   "result": {
-    "item": "minecraft:iron_trapdoor",
+    "item": "createdeco:zinc_trapdoor",
     "count": 2
   },
   "show_notification": true
