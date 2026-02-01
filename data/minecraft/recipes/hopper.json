@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "create:iron_sheet"
+    },
+    "B": {
+        "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    "A A",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "item": "minecraft:hopper"
+  },
+  "show_notification": true
+}

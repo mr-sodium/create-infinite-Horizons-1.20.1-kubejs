@@ -6,6 +6,9 @@
     "minecraft:cobbled_deepslate",
     "minecraft:diorite",
     "minecraft:andesite",
-    "minecraft:granite"
+    "minecraft:granite",
+    "minecraft:stone",
+    "minecraft:mossy_cobblestone",
+    "regions_unexplored:mossy_stone"
   ]
 }
