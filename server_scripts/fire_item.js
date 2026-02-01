@@ -18,4 +18,4 @@ PlayerEvents.tick(event => {
             player.setSecondsOnFire(4)
         }
     }    
-});
+})

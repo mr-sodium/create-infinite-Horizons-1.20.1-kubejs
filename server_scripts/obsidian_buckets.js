@@ -87,4 +87,4 @@ ItemEvents.entityInteracted('kubejs:obsidian_bucket', event => {
     item.shrink(1)
     player.giveInHand('kubejs:obsidian_milk_bucket')
     target.playSound('minecraft:entity.cow.milk')
-});
+})
