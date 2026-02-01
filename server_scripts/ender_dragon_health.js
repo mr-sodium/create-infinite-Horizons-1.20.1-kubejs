@@ -22,4 +22,4 @@ EntityEvents.spawned(event => {
       entity.health = newHealth
     }
   }
-})
+});
