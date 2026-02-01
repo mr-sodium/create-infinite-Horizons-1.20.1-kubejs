@@ -11,4 +11,4 @@ BlockEvents.rightClicked(event => {
         player.swing()
         event.cancel()
     }
-})
+});

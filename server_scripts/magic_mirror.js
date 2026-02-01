@@ -55,4 +55,4 @@ ItemEvents.rightClicked(event => {
     event.server.runCommand(`/playsound block.beacon.deactivate block @p ${player.x} ${player.y} ${player.z} 2 0.9`)
     player.addItemCooldown("kubejs:broken_magic_mirror", cooldowntime)
   }
-})
+});

@@ -58,4 +58,4 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
             event.server.runCommand(`/summon minecraft:tnt ${player.x} ${player.y} ${player.z} {Fuse:240s}`)
         }
     }
-})
+});
