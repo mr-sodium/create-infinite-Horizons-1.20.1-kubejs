@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "kubejs:cracked_diamond_block"
+    },
+    {
+      "item": "dungeonnowloading:mendstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:budding_durrite"
+    }
+  ]
+}
