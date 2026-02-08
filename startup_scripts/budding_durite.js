@@ -13,7 +13,7 @@ StartupEvents.registry('block', event => {
             let targetPos = block.pos.relative(side)
             let targetBlock = level.getBlock(targetPos)
             
-            if (targetBlock.id == 'minecraft:air') {
+            if (targetpos.id == 'minecraft:air') {
                 level.setBlock(targetPos, 'dungeonnowloading:small_durite_bud', 3)
             } else if (targetBlock.id == 'dungeonnowloading:small_durite_bud') {
                 level.setBlock(targetPos, 'dungeonnowloading:medium_durite_bud', 3)
