@@ -3,7 +3,7 @@ ItemEvents.rightClicked(event => {
   const spawnPos = player.getRespawnPosition()
   const respawnDim = player.getRespawnDimension()
   const dimension = player.level.dimension.toString()
-  const cooldowntime = 600;
+  const cooldowntime = 1;
   const mirrors = [
   "kubejs:magic_mirror",
   "kubejs:cracked_magic_mirror",
@@ -31,9 +31,9 @@ ItemEvents.rightClicked(event => {
       spawnPos.z + 0.5
     )}
 
-    event.server.runCommand(`/playsound minecraft:block.amethyst_block.step block @p ${player.x} ${player.y} ${player.z} 1 1.3`)
-    event.server.runCommand(`/playsound minecraft:block.bone_block.place block @p ${player.x} ${player.y} ${player.z} 3 2`)
-    event.server.runCommand(`/playsound minecraft:block.amethyst_block.break block @p ${player.x} ${player.y} ${player.z} 1 0.2`)
+    event.server.runCommandSilent(`/playsound minecraft:block.amethyst_block.step block @p ${player.x} ${player.y} ${player.z} 1 1.3`)
+    event.server.runCommandSilent(`/playsound minecraft:block.bone_block.place block @p ${player.x} ${player.y} ${player.z} 3 2`)
+    event.server.runCommandSilent(`/playsound minecraft:block.amethyst_block.break block @p ${player.x} ${player.y} ${player.z} 1 0.2`)
     
     if(!player.creative){
       if(item.id == "kubejs:magic_mirror"){
@@ -52,7 +52,5 @@ ItemEvents.rightClicked(event => {
     player.addItemCooldown("kubejs:damaged_magic_mirror", cooldowntime)
     
   }else{
-    event.server.runCommand(`/playsound block.beacon.deactivate block @p ${player.x} ${player.y} ${player.z} 2 0.9`)
-    player.addItemCooldown("kubejs:broken_magic_mirror", cooldowntime)
-  }
+    event.server.runCommandSilent(`/playsound block.beacon.deactivate block @p ${player.x} ${player.y} ${player.z} 2 0.9`)  }
 })
