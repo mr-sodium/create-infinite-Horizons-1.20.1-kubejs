@@ -5,8 +5,8 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
     const item = event.item
     const cooldowntime = 12
 
-    event.server.runCommand(`/playsound minecraft:block.note_block.chime block @p ${player.x} ${player.y} ${player.z} 1.2 1.4`)
-    event.server.runCommand(`/playsound minecraft:block.anvil.destroy block @p ${player.x} ${player.y} ${player.z} 0.3 2`)
+    event.server.runCommandSilent(`/playsound minecraft:block.note_block.chime block @p ${player.x} ${player.y} ${player.z} 1.2 1.4`)
+    event.server.runCommandSilent(`/playsound minecraft:block.anvil.destroy block @p ${player.x} ${player.y} ${player.z} 0.3 2`)
     
     if (!player.creative) {
         item.shrink(1)
@@ -55,7 +55,7 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
         if(r2 == 1){
             player.give(Item.of('minecraft:ender_eye'))
         }else{
-            event.server.runCommand(`/summon minecraft:tnt ${player.x} ${player.y} ${player.z} {Fuse:240s}`)
+            event.server.runCommandSilent(`/summon minecraft:tnt ${player.x} ${player.y} ${player.z} {Fuse:240s}`)
         }
     }
 })

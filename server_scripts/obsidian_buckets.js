@@ -17,13 +17,13 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
         player.give(filledBucketId)
         player.swing()
         if (targetBlockId == 'minecraft:water') {
-            event.server.runCommand(`/playsound minecraft:item.bucket.fill master @p ${player.x} ${player.y} ${player.z} 1 1`)
+            event.server.runCommandSilent(`/playsound minecraft:item.bucket.fill master @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
         if (targetBlockId == 'minecraft:lava') {
-            event.server.runCommand(`/playsound minecraft:item.bucket.fill_lava master @p ${player.x} ${player.y} ${player.z} 1 1`)
+            event.server.runCommandSilent(`/playsound minecraft:item.bucket.fill_lava master @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
         if (targetBlockId == 'minecraft:powder_snow') {
-            event.server.runCommand(`/playsound minecraft:item.bucket.fill_powder_snow master @p ${player.x} ${player.y} ${player.z} 1 1`)
+            event.server.runCommandSilent(`/playsound minecraft:item.bucket.fill_powder_snow master @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
         event.cancel()
     }
@@ -63,13 +63,13 @@ ItemEvents.rightClicked(event => {
 
     if (placed) {
         if (fluidToPlace == 'minecraft:water') {
-            event.server.runCommand(`/playsound minecraft:item.bucket.empty block @p ${player.x} ${player.y} ${player.z} 1 1`)
+            event.server.runCommandSilent(`/playsound minecraft:item.bucket.empty block @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
         if (fluidToPlace == 'minecraft:lava') {
-            event.server.runCommand(`/playsound minecraft:item.bucket.empty_lava block @p ${player.x} ${player.y} ${player.z} 1 1`)
+            event.server.runCommandSilent(`/playsound minecraft:item.bucket.empty_lava block @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
         if (fluidToPlace == 'minecraft:powder_snow') {
-            event.server.runCommand(`/playsound minecraft:item.bucket.empty_powder_snow block @p ${player.x} ${player.y} ${player.z} 1 1`)
+            event.server.runCommandSilent(`/playsound minecraft:item.bucket.empty_powder_snow block @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
         
         if (!player.creative) {
