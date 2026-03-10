@@ -5,11 +5,6 @@ StartupEvents.registry('block', event => {
     .hardness(5)
     .resistance(6)
     .tagBlock('minecraft:mineable/pickaxe')
-
-  event.create('budding_durite')
-    .displayName('Budding Durite')
-    .soundType('amethyst')
-    .tagBlock('minecraft:mineable/pickaxe')
     
   event.create('cracked_diamond_block')
     .displayName('Cracked Diamond Block')
