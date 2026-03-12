@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+        "item": "createdeco:industrial_iron_ingot"
+    },
+    "B": {
+        "item": "createdeco:industrial_iron_sheet_metal"
+    },
+    "S": {
+      "item": "createdeco:industrial_iron_sheet"
+    }
+  },
+  "pattern": [
+    "SIS",
+    "SBS",
+    "SIS"
+  ],
+  "result": {
+    "item": "kubejs:industrial_iron_pipe"
+  },
+  "show_notification": false
+}
