@@ -14,13 +14,13 @@ StartupEvents.registry('block', event => {
             let targetBlock = level.getBlock(targetPos)
             
             if (targetBlock.id == 'minecraft:air') {
-                targetBlock.set('dungeonnowloading:small_durite_bud')
+                targetBlock.set(`dungeonnowloading:small_durite_bud`, { facing: side})
             } else if (targetBlock.id == 'dungeonnowloading:small_durite_bud') {
-                targetBlock.set('dungeonnowloading:medium_durite_bud')
+                targetBlock.set(`dungeonnowloading:medium_durite_bud`, { facing: side})
             } else if (targetBlock.id == 'dungeonnowloading:medium_durite_bud') {
-                targetBlock.set('dungeonnowloading:large_durite_bud')
+                targetBlock.set(`dungeonnowloading:large_durite_bud`, { facing: side})
             } else if (targetBlock.id == 'dungeonnowloading:large_durite_bud') {
-                targetBlock.set('dungeonnowloading:durite_cluster')
+                targetBlock.set(`dungeonnowloading:durite_cluster`, { facing: side})
             }
         }
     })
