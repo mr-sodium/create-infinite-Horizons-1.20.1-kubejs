@@ -11,17 +11,20 @@
       "item": "minecraft:diamond_hoe"
     },
     "L": {
-      "item": "minecraft:netherite_ingot"
+      "item": "createdeco:netherite_sheet"
     },
     "s": {
       "item": "minecraft:nether_star"
+    },
+    "a": {
+      "item": "createutilities:void_steel_block"
     }
   },
   "pattern": [
-    "NACLs",
-    "C    ",
-    "C    ",
-    "C    ",
+    "NAAaa",
+    "CLLAa",
+    "C  Ls",
+    "C   L",
     "C    "
   ],
   "result": {
