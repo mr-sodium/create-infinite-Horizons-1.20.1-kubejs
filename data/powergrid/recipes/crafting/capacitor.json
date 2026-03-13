@@ -12,7 +12,7 @@
       "item": "minecraft:paper"
     },
     "Z": {
-      "tag": "forge:plates/zinc"
+      "item": "createdeco:zinc_sheet"
     }
   },
   "pattern": [

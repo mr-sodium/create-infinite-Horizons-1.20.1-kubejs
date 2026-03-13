@@ -9,7 +9,7 @@
       "tag": "forge:plates/copper"
     },
     "Z": {
-      "tag": "forge:plates/zinc"
+      "item": "createdeco:zinc_sheet"
     }
   },
   "pattern": [
