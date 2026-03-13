@@ -25,9 +25,9 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
     if(result == 4){
         player.give(Item.of('endrem:wither_eye'))
     }
-    if(result == 5){
-        player.give(Item.of('endrem:evil_eye'))
-    }
+//    if(result == 5){
+//        player.give(Item.of('endrem:evil_eye'))
+//    }
     if(result == 6){
         player.give(Item.of('endrem:corrupted_eye'))
     }
