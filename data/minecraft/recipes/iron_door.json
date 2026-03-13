@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "NN",
+    "NN",
+    "NN"
+  ],
+  "result": {
+    "item": "minecraft:iron_door",
+    "count": 3
+  },
+  "show_notification": true
+}
