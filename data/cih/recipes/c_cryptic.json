@@ -6,7 +6,7 @@
         "item": "create:experience_block"
     },
     "A": {
-        "tag": "minecraft:minecraft:ender_eye"
+        "item": "minecraft:ender_eye"
     }
   },
   "pattern": [
