@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "kubejs:industrial_iron_pipe"
+    },
+    "B": {
+        "item": "createdeco:industrial_iron_bars"
+    },
+    "C": {
+        "item": "minecraft:netherrack"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "result": {
+    "item": "create:empty_blaze_burner"
+  },
+  "show_notification": false
+}
