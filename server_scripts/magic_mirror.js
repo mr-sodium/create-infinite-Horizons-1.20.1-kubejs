@@ -3,7 +3,7 @@ ItemEvents.rightClicked(event => {
   const spawnPos = player.getRespawnPosition()
   const respawnDim = player.getRespawnDimension()
   const dimension = player.level.dimension.toString()
-  const cooldowntime = 1;
+  const cooldowntime = 600;
   const mirrors = [
   "kubejs:magic_mirror",
   "kubejs:cracked_magic_mirror",
