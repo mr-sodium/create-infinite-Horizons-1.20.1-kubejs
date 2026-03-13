@@ -1,24 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "E": {
-      "item": "create:electron_tube"
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:crafting_table"
     },
-    "S": {
+    {
       "item": "create:empty_schematic"
-    },
-    "W": {
-      "tag": "minecraft:planks"
     }
-  },
-  "pattern": [
-    "ES",
-    "WW",
-    "WW"
   ],
-  "result": {
-    "item": "powergrid:circuit_design_table"
-  },
-  "show_notification": true
+  "results": [
+    {
+      "item": "powergrid:circuit_design_table"
+    }
+  ]
 }
