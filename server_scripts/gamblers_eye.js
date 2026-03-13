@@ -10,8 +10,9 @@ ItemEvents.rightClicked('kubejs:gamblers_eye', event => {
     
     if (!player.creative) {
         item.shrink(1)
+        player.addItemCooldown("kubejs:gamblers_eye", cooldowntime)
     }
-    player.addItemCooldown("kubejs:gamblers_eye", cooldowntime)
+    
     if(result == 1){
         player.give(Item.of('endrem:exotic_eye'))
     }
