@@ -3,6 +3,7 @@ StartupEvents.modifyCreativeTab('kubejs:tab', event => {
 	event.remove('kubejs:mimic_spawn_egg')
 	event.remove('kubejs:damaged_magic_mirror')
 	event.remove('kubejs:cracked_magic_mirror')
+	event.remove('kubejs:cursed_budding_durite')
 })
 
 StartupEvents.modifyCreativeTab('artifacts:main', event => {
