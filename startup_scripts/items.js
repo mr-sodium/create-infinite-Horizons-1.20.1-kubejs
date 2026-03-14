@@ -30,5 +30,12 @@ StartupEvents.registry('item', event => {
     event.create('damaged_magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('rare')
     event.create('broken_magic_mirror').displayName('Broken Magic Mirror').maxStackSize(1)
     event.create('gamblers_eye').displayName('Gamblers Eye')
-    event.create('peppi_can').displayName('Peppi Can').maxStackSize(100)
+  
+    event.create('peppi_can').displayName('Peppi Can').maxStackSize(64)
+    .food.hunger(0).saturation(0).alwaysedible().eaten(context => {
+        context.item.shrink(1)
+        context.player.give('kubejs:peppi_can') 
+        context.player.addEffect('minecraft:nausea', 255, 2, true, false)
+
+    })
 })
