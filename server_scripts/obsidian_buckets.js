@@ -1,6 +1,5 @@
 ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
     const {item, target, player} = event
-    const dimension = player.level.dimension.toString()
     const targetBlock = target.block
     const targetBlockId = targetBlock.id
     const fillMap = {
