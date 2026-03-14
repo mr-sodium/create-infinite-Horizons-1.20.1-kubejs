@@ -30,13 +30,18 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
 })
 
 ItemEvents.rightClicked(event => {
-    const { item, target, player, level } = event
+    const {item, target, player, level} = event
+    const dimension = player.level.dimension.toString()
     const placeMap = {
         'kubejs:obsidian_water_bucket': 'minecraft:water',
         'kubejs:obsidian_lava_bucket': 'minecraft:lava',
         'kubejs:obsidian_powder_snow_bucket': 'minecraft:powder_snow'
     }
     const fluidToPlace = placeMap[item.id]
+
+    if (dimension == "minecraft:the_nether" && item.id == "kubejs:obsidian_water_bucket") {
+        return
+    }   
 
     if (!fluidToPlace) return
 

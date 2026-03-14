@@ -1,5 +1,5 @@
 ItemEvents.rightClicked(event => {
-  const {player, item, hand} = event
+  const {player, item, hand, level} = event
   const spawnPos = player.getRespawnPosition()
   const respawnDim = player.getRespawnDimension()
   const dimension = player.level.dimension.toString()
@@ -22,7 +22,7 @@ ItemEvents.rightClicked(event => {
       let newspawnPos = player.level.getSharedSpawnPos()
       player.teleportTo(
       newspawnPos.x + 0.5,
-      newspawnPos.y + 0.5,
+      level.getHeight('WORLD_SURFACE', newspawnPos.x, newspawnPos.z) + 0.5,
       newspawnPos.z + 0.5
     )}else{
       player.teleportTo(
