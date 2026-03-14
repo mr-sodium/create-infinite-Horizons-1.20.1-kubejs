@@ -94,71 +94,6 @@ ItemEvents.rightClicked('kubejs:obsidian_bucket', event => {
   // Raytrace 10 blocks forward
   const result = player.rayTrace(4.5, true)
 
-<<<<<<< Updated upstream
-ItemEvents.rightClicked(event => {
-    const {item, target, player, level} = event
-    const dimension = player.level.dimension.toString()
-    const placeMap = {
-        'kubejs:obsidian_water_bucket': 'minecraft:water',
-        'kubejs:obsidian_lava_bucket': 'minecraft:lava',
-        'kubejs:obsidian_powder_snow_bucket': 'minecraft:powder_snow'
-    }
-    const fluidToPlace = placeMap[item.id]
-
-    if (dimension == "minecraft:the_nether" && item.id == "kubejs:obsidian_water_bucket") {
-        return
-    }   
-
-    if (!fluidToPlace) return
-
-    let placed = false 
-    if (target.block.id == fluidToPlace && target.block.properties.level != 0) {
-        target.block.set(fluidToPlace)
-        player.swing()
-        placed = true
-    } else {
-        const placePos = target.block.offset(target.facing)
-        const targetBlock = level.getBlock(placePos)
-        const belowBlock = level.getBlock(placePos.offset(0, -1, 0))
-
-        if (belowBlock && belowBlock.id == fluidToPlace && target.block.id != 'minecraft:powder_snow') {
-            return
-        }
-
-        if (targetBlock.id == 'minecraft:air' || targetBlock.canBeReplaced()) {
-            targetBlock.set(fluidToPlace)
-            player.swing()
-            placed = true
-        }
-    }
-
-    if (placed) {
-        if (fluidToPlace == 'minecraft:water') {
-            event.server.runCommandSilent(`/playsound minecraft:item.bucket.empty block @p ${player.x} ${player.y} ${player.z} 1 1`)
-        }
-        if (fluidToPlace == 'minecraft:lava') {
-            event.server.runCommandSilent(`/playsound minecraft:item.bucket.empty_lava block @p ${player.x} ${player.y} ${player.z} 1 1`)
-        }
-        if (fluidToPlace == 'minecraft:powder_snow') {
-            event.server.runCommandSilent(`/playsound minecraft:item.bucket.empty_powder_snow block @p ${player.x} ${player.y} ${player.z} 1 1`)
-        }
-        
-        if (!player.creative) {
-            item.shrink(1)
-            player.give('kubejs:obsidian_bucket')
-        }
-        event.cancel()
-    }
-})
-
-ItemEvents.entityInteracted('kubejs:obsidian_bucket', event => {
-    const {item, player, target} = event
-
-    if(event.target.type != 'minecraft:cow') return
-    item.shrink(1)
-    player.giveInHand('kubejs:obsidian_milk_bucket')
-    target.playSound('minecraft:entity.cow.milk')
-=======
   if (!result) return
 
   // If looking at a block
@@ -166,5 +101,4 @@ ItemEvents.entityInteracted('kubejs:obsidian_bucket', event => {
     const block = result.block
     console.log("Looking at block:", block.id)
   }
->>>>>>> Stashed changes
 })
