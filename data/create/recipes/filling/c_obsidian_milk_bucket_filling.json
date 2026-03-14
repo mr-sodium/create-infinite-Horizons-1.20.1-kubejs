@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "kubejs:obsidian_bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecraft:milk",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:obsidian_milk_bucket"
+    }
+  ]
+}
