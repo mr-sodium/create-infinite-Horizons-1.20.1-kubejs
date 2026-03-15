@@ -3,17 +3,14 @@
   "category": "misc",
   "key": {
     "N": {
-        "item": "createdeco:andesite_sheet"
+        "item": "trials:copper_door"
     }
   },
   "pattern": [
-    "NN",
-    "NN",
-    "NN"
+    "N"
   ],
   "result": {
-    "item": "createdeco:andesite_door",
-    "count": 3
+    "item": "createdeco:copper_door"
   },
   "show_notification": true
 }
