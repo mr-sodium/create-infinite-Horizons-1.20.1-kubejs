@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:cardboard"
+    },
+    "A": {
+        "tag": "forge:sand"
+    },
+    "C": {
+        "item": "minecraft:gunpowder"
+    }
+  },
+  "pattern": [
+    "NAN",
+    "ACA",
+    "NAN"
+  ],
+  "result": {
+    "item": "minecraft:tnt",
+    "count": 2
+  },
+  "show_notification": false
+}
