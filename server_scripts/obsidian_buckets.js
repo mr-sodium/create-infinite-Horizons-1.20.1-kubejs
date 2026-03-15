@@ -29,16 +29,19 @@ ItemEvents.rightClicked(event => {
     let placed = false
     const block = result.block
     
-    if (block == fluidToPlace && block == fluidToPlace) {
+    if (block == fluidToPlace) {
         if (block.properties.level != 0) {
             block.set(fluidToPlace)
             placed = true
         }
-    } else {
+    } else if ((block == 'minecraft:water' && fluidToPlace != 'minecraft:water') || (block == 'minecraft:lava' && fluidToPlace != 'minecraft:lava')) {
+        block.set(fluidToPlace)
+        placed = true
+    }  else {
         const placePos = block.offset(result.facing)
         const targetBlock = level.getBlock(placePos)
         const belowBlock = level.getBlock(placePos.offset(0, -1, 0))
-
+        
         if (belowBlock && belowBlock.id == fluidToPlace && target.block.id != 'minecraft:powder_snow') return
 
         if (targetBlock.id == 'minecraft:air' || targetBlock.canBeReplaced()) {
