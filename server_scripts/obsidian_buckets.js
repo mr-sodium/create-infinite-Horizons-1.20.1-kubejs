@@ -105,7 +105,6 @@ ItemEvents.rightClicked(event => {
             } else {
                 player.give(pickedUpItem)
             }
-            
         } else if (player.creative) {
             if (!player.inventory.contains(pickedUpItem)) {
                 player.give(pickedUpItem)
