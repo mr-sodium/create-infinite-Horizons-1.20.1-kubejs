@@ -31,4 +31,5 @@ StartupEvents.registry('item', event => {
     event.create('damaged_magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('rare')
     event.create('broken_magic_mirror').displayName('Broken Magic Mirror').maxStackSize(1)
     event.create('gamblers_eye').displayName('Gamblers Eye')
+    event.create('rubber_sheet').displayName('Rubber Sheet')
 })

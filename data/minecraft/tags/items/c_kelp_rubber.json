@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "kubejs:rubber_sheet",
+    "minecraft:dried_kelp_block"
+  ]
+}

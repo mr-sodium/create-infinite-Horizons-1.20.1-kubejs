@@ -1,0 +1,39 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "minecraft:logs"
+    },
+        {
+      "tag": "minecraft:logs"
+    },
+        {
+      "tag": "minecraft:logs"
+    },
+    {
+      "tag": "minecraft:logs"
+    },
+    {
+      "tag": "minecraft:logs"
+    },
+    {
+      "tag": "minecraft:logs"
+    },
+    {
+      "tag": "minecraft:logs"
+    },
+    {
+      "tag": "minecraft:logs"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "kubejs:raw_rubber",
+      "nbt": {}
+    },
+    {
+      "item": "create:pulp"
+    }
+  ]
+}

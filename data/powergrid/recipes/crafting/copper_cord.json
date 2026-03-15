@@ -9,7 +9,7 @@
       "item": "powergrid:insulated_copper_wire"
     },
     {
-      "item": "minecraft:dried_kelp"
+      "tag": "minecraft:c_kelp_rubber"
     }
   ],
   "result": {
