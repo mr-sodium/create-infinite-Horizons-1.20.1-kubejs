@@ -6,7 +6,7 @@
       "tag": "forge:wires/copper"
     },
     {
-      "tag": "minecraft:c_kelp_rubber"
+      "item": "kubejs:rubber_sheet"
     }
   ],
   "result": {

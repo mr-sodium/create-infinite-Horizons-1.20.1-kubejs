@@ -9,7 +9,7 @@
       "item": "powergrid:insulated_copper_wire"
     },
     {
-      "tag": "minecraft:c_kelp_rubber"
+      "item": "kubejs:rubber_sheet"
     }
   ],
   "result": {
