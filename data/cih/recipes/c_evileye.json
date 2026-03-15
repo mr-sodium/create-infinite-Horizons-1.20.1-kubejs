@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "minecraft:gold_block"
+    },
+    "A": {
+        "item": "create:golden_sheet"
+    },
+    "C": {
+        "item": "minecraft:lapis_lazuli"
+    },
+    "L": {
+        "tag": "minecraft:c_eeyes2"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "CLC",
+    "ANA"
+  ],
+  "result": {
+    "item": "endrem:evil_eye"
+  },
+  "show_notification": false
+}

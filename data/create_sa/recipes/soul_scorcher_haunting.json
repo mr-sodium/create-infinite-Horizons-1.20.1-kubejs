@@ -1,0 +1,14 @@
+
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "dungeonnowloading:scorcher"
+    }
+  ],
+  "results": [
+    {
+      "item": "dungeonnowloading:soul_scorcher"
+    }
+  ]
+}
