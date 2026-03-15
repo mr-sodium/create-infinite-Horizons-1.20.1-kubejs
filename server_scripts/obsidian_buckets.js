@@ -100,7 +100,12 @@ ItemEvents.rightClicked(event => {
 
         if (!player.creative) {
             item.shrink(1)
-            player.setHeldItem(hand, pickedUpItem)
+            if (item.empty) {
+                player.setHeldItem(hand, pickedUpItem)
+            } else {
+                player.give(pickedUpItem)
+            }
+            
         } else if (player.creative) {
             if (!player.inventory.contains(pickedUpItem)) {
                 player.give(pickedUpItem)
