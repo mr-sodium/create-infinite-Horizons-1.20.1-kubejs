@@ -30,16 +30,30 @@ StartupEvents.registry('item', event => {
     event.create('damaged_magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('rare')
     event.create('broken_magic_mirror').displayName('Broken Magic Mirror').maxStackSize(1)
     event.create('gamblers_eye').displayName('Gamblers Eye')
-  
-    event.create('peppi_can').displayName('Peppi Can')
+    event.create('peppi_can')
+    .displayName('Peppi Can')
+    .useAnimation('drink')
     .food(food => {
         food.hunger(0)
         .saturation(0)
-        .alwaysedible()
+        .alwaysEdible()
+        .effect('minecraft:nausea', 400, 0, 1)
+        .effect('minecraft:speed', 400, 4, 1)
+        .effect('minecraft:strength', 400, 4, 1)
         .eaten(context => {
-            context.item.shrink(1)
-            context.player.give('kubejs:peppi_can') 
-            context.player.addEffect('minecraft:nausea', 255, 2, true, false)
+
+        context.item.shrink(1)
+        context.player.give('kubejs:peppi_can')
+
+        // 20 seconds = 400 ticks
+        context.level.schedule(400, () => {
+          context.level
+            .createExplosion(context.player.x, context.player.y, context.player.z)
+            .strength(4)
+            .explode()
         })
-    })
+
+      })
+  })
+
 })

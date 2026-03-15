@@ -1,8 +1,10 @@
 {
 	"format_version": "1.21.11",
-	"credit": "Made with Blockbench",
+	"credit": "Made with your mom's blender",
+	"texture_size": [32, 32],
 	"textures": {
-		"1": "kubejs:item/peppi_can"
+		"1": "kubejs:item/peppi_can",
+		"particle": "kubejs:item/peppi_can"
 	},
 	"elements": [
 		{
