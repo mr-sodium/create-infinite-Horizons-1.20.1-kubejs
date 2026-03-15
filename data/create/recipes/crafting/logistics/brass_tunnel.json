@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:electron_tube"
+    },
+    "B": {
+      "item": "create:brass_ingot"
+    },
+    "C": {
+      "tag": "minecraft:c_kelp_rubber"
+    }
+  },
+  "pattern": [
+    "A ",
+    "BB",
+    "CC"
+  ],
+  "result": {
+    "count": 2,
+    "item": "create:brass_tunnel"
+  },
+  "show_notification": true
+}
