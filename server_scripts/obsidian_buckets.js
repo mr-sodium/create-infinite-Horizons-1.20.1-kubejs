@@ -8,7 +8,7 @@ ItemEvents.entityInteracted('kubejs:obsidian_bucket', event => {
 })
 
 ItemEvents.rightClicked(event => {
-    const { player, item, level, target } = event
+    const { player, item, level, target, hand } = event
     const reach = 4.5
     const dimension = player.level.dimension.toString()
 
@@ -63,13 +63,13 @@ ItemEvents.rightClicked(event => {
 
         if (!player.creative) {
             item.shrink(1)
-            player.give('kubejs:obsidian_bucket')
+            player.setHeldItem(hand, 'kubejs:obsidian_bucket')
         }
     }
 })
 
 ItemEvents.rightClicked(event => {
-    const { player, item } = event
+    const { player, item, hand } = event
     const reach = 4.5
 
     if (item.id !== 'kubejs:obsidian_bucket') return
@@ -97,11 +97,14 @@ ItemEvents.rightClicked(event => {
         player.swing()
         
         event.server.runCommandSilent(`/playsound ${sound} block @p ${player.x} ${player.y} ${player.z} 1 1`)
-        
-        player.give(pickedUpItem)
 
         if (!player.creative) {
             item.shrink(1)
+            player.setHeldItem(hand, pickedUpItem)
+        } else if (player.creative) {
+            if (!player.inventory.contains(pickedUpItem)) {
+                player.give(pickedUpItem)
+            }
         }
     }
 })
