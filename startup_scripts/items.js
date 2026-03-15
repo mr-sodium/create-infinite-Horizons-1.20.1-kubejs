@@ -30,6 +30,7 @@ StartupEvents.registry('item', event => {
     event.create('damaged_magic_mirror').displayName('Magic Mirror').maxStackSize(1).rarity('rare')
     event.create('broken_magic_mirror').displayName('Broken Magic Mirror').maxStackSize(1)
     event.create('gamblers_eye').displayName('Gamblers Eye')
+   
     event.create('peppi_can')
     .displayName('Peppi Can')
     .useAnimation('drink')
@@ -45,15 +46,9 @@ StartupEvents.registry('item', event => {
         context.item.shrink(1)
         context.player.give('kubejs:peppi_can')
 
-        // 20 seconds = 400 ticks
-        context.level.schedule(400, () => {
-          context.level
-            .createExplosion(context.player.x, context.player.y, context.player.z)
-            .strength(4)
-            .explode()
         })
 
       })
   })
 
-})
+
