@@ -32,23 +32,20 @@ StartupEvents.registry('item', event => {
     event.create('gamblers_eye').displayName('Gamblers Eye')
    
     event.create('peppi_can')
-    .displayName('Peppi Can')
-    .useAnimation('drink')
-    .food(food => {
-        food.hunger(0)
-        .saturation(0)
-        .alwaysEdible()
-        .effect('minecraft:nausea', 400, 0, 1)
-        .effect('minecraft:speed', 400, 4, 1)
-        .effect('minecraft:strength', 400, 4, 1)
-        .eaten(context => {
-
-        context.item.shrink(1)
-        context.player.give('kubejs:peppi_can')
-
+        .displayName('Peppi Can')
+        .useAnimation('drink')
+        .food(food => {
+            food.hunger(0)
+                .saturation(0)
+                .alwaysEdible()
+                .effect('minecraft:nausea', 400, 0, 1)
+                .effect('minecraft:speed', 400, 4, 1)
+                .effect('minecraft:strength', 400, 4, 1)
+                .eaten(context => {
+                    context.item.shrink(1)
+                    context.player.give('kubejs:peppi_can')
+                })
         })
-
-      })
-  })
+})
 
 
