@@ -5,6 +5,7 @@ StartupEvents.registry('item', event => {
     event.create('rose_quartz_dust').displayName('Rose Quartz Dust')
     event.create('carbon_dust').displayName('Carbon Dust')
     event.create('brass_pipe').displayName('Brass Pipe')
+    event.create('industrial_iron_pipe').displayName('Industrial Iron Pipe')
     event.create('obsidian_bucket').displayName('Obsidian Bucket').maxStackSize(16)
     event.create('obsidian_lava_bucket').displayName('Obsidian Lava Bucket').maxStackSize(1)
     event.create('obsidian_water_bucket').displayName('Obsidian Water Bucket').maxStackSize(1)
@@ -44,4 +45,6 @@ StartupEvents.registry('item', event => {
                     context.player.give('kubejs:peppi_can')
                 })
         })
+    event.create('rubber_sheet').displayName('Rubber Sheet')
 })
+    

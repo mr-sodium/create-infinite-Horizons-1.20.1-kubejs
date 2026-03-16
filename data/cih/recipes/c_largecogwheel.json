@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "create:cogwheel"
+    },
+    {
+      "item": "minecraft:oak_slab"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:large_cogwheel"
+    }
+  ]
+}

@@ -17,6 +17,7 @@
     }
   ],
   "result": {
-    "item": "kubejs:rose_quartz_dust"
+    "item": "kubejs:rose_quartz_dust",
+    "count": 4
   }
 }

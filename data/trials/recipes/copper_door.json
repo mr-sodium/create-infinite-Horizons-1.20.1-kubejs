@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:copper_sheet"
+    }
+  },
+  "pattern": [
+    "NN",
+    "NN",
+    "NN"
+  ],
+  "result": {
+    "item": "trials:copper_door",
+    "count": 3
+  },
+  "show_notification": true
+}

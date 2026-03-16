@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:crafting_table"
+    },
+    {
+      "item": "create:empty_schematic"
+    }
+  ],
+  "results": [
+    {
+      "item": "powergrid:circuit_design_table"
+    }
+  ]
+}

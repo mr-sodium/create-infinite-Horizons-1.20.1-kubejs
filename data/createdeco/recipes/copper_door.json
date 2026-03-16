@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "trials:copper_door"
+    }
+  },
+  "pattern": [
+    "N"
+  ],
+  "result": {
+    "item": "createdeco:copper_door"
+  },
+  "show_notification": true
+}

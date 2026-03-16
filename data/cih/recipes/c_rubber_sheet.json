@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "kubejs:carbon_dust"
+    },
+    {
+      "amount": 250,
+      "fluid": "kubejs:raw_rubber",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:rubber_sheet"
+    }
+  ],
+  "heatRequirement": "heated"
+}

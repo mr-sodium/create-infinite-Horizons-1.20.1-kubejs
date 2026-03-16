@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:golden_sheet"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "NNN"
+  ],
+  "result": {
+    "item": "supplementaries:gold_trapdoor",
+    "count": 2
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+        "item": "create:brass_sheet"
+    }
+  },
+  "pattern": [
+    "NN",
+    "NN",
+    "NN"
+  ],
+  "result": {
+    "item": "createdeco:brass_door",
+    "count": 3
+  },
+  "show_notification": true
+}

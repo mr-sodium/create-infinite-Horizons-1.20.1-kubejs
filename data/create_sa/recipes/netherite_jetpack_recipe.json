@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "create:fluid_tank"
+    "item": "minecraft:netherite_upgrade_smithing_template"
   },
   "base": {
     "item": "create_sa:brass_jetpack_chestplate"
   },
   "addition": {
-    "item": "minecraft:netherite_ingot"
+    "item": "createdeco:netherite_sheet"
   },
   "result": {
     "item": "create_sa:netherite_jetpack_chestplate"
