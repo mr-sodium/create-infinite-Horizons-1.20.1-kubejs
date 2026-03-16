@@ -43,8 +43,10 @@ StartupEvents.registry('item', event => {
                 .effect('minecraft:strength', 400, 4, 1)
                 .eaten(context => {
                     context.item.shrink(1)
-                    context.player.give('kubejs:peppi_can')
+                    context.player.give('kubejs:empty_can')
                 })
         })
+
+    event.create('empty_can').displayName('Empty Can')
 })
     

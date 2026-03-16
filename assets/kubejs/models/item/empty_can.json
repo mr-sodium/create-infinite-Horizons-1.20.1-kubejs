@@ -1,10 +1,10 @@
 {
-	"format_version": "1.21.11",
-	"credit": "Made with your mom's blender",
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "kubejs:item/peppi_can",
-		"particle": "kubejs:item/peppi_can"
+		"0": "kubejs:item/empty_can",
+		"particle": "kubejs:item/empty_can"
 	},
 	"elements": [
 		{
@@ -12,12 +12,12 @@
 			"to": [10, 10, 10],
 			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 6]},
 			"faces": {
-				"north": {"uv": [3, 0, 5.5, 6], "texture": "#1"},
-				"east": {"uv": [0, 6.5, 2.5, 12.5], "texture": "#1"},
-				"south": {"uv": [0, 0, 2.5, 6], "texture": "#1"},
-				"west": {"uv": [2.5, 12.5, 0, 6.5], "rotation": 180, "texture": "#1"},
-				"up": {"uv": [3, 6.5, 5.5, 9], "texture": "#1"},
-				"down": {"uv": [6, 6.5, 8.5, 9], "texture": "#1"}
+				"north": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"east": {"uv": [2, 0, 4, 5], "texture": "#0"},
+				"south": {"uv": [4, 0, 6, 5], "texture": "#0"},
+				"west": {"uv": [0, 5, 2, 10], "texture": "#0"},
+				"up": {"uv": [4, 7, 2, 5], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [6, 5, 4, 7], "texture": "#0"}
 			}
 		}
 	],
@@ -27,7 +27,7 @@
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 2, -1],
+			"translation": [0, 2, 0],
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"firstperson_righthand": {
@@ -40,6 +40,7 @@
 			"translation": [0, 6.25, 0]
 		},
 		"gui": {
+			"rotation": [0, 90, 0],
 			"translation": [0, 4.5, 0],
 			"scale": [1.5, 1.5, 1.5]
 		},
@@ -48,7 +49,7 @@
 		},
 		"fixed": {
 			"rotation": [0, 90, 0],
-			"translation": [0, 4, 0.5],
+			"translation": [0, 4.5, 0.5],
 			"scale": [1.5, 1.5, 1.5]
 		}
 	}
