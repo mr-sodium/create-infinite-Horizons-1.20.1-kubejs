@@ -24,7 +24,7 @@ ItemEvents.rightClicked(event => {
       newspawnPos.x + 0.5,
       level.getHeight('WORLD_SURFACE', newspawnPos.x, newspawnPos.z) + 0.5,
       newspawnPos.z + 0.5
-    )}else{
+    )} else {
       player.teleportTo(
       spawnPos.x + 0.5,
       spawnPos.y + 0.5625,
@@ -50,8 +50,6 @@ ItemEvents.rightClicked(event => {
       player.addItemCooldown("kubejs:cracked_magic_mirror", cooldowntime)
       player.addItemCooldown("kubejs:damaged_magic_mirror", cooldowntime)
     }
-    
-    
-  }else{
+  } else {
     event.server.runCommandSilent(`/playsound block.beacon.deactivate block @p ${player.x} ${player.y} ${player.z} 2 0.9`)  }
 })

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "create:polished_rose_quartz"
+    },
+    "B": {
+        "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "BBB"
+  ],
+  "result": {
+    "item": "bits_n_bobs:large_nixie_tube",
+    "count": 4
+  },
+  "show_notification": false
+}
