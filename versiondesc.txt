@@ -1,1 +1,5 @@
-main version of modpack 1.0.0 with no additional mods 
+main version of modpack 1.0.0 
+-electroblob's wizardry 
+-create enchant industres 
+-waystone(maybe)?
+-
