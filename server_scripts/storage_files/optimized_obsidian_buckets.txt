@@ -20,7 +20,7 @@ ItemEvents.rightClicked(event => {
         'kubejs:obsidian_lava_bucket': 'minecraft:lava',
         'kubejs:obsidian_powder_snow_bucket': 'minecraft:powder_snow'
     }
-
+    // Pick up code -----
     if (item.id == 'kubejs:obsidian_bucket') {
         let pickedUpItem = false
         let sound = ''
@@ -55,7 +55,7 @@ ItemEvents.rightClicked(event => {
                 }
             }
         }
-    } else {
+    } else { // Placing code -----
         const fluidToPlace = placeMap[item.id]
         if (!fluidToPlace) return
 
