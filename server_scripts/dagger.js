@@ -10,7 +10,7 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
         
         if (item.damageValue >= item.maxDamage) {
             item.count--
-            event.server.runCommandSilent(`/playsound minecraft:entity.item.break block @p ${player.x} ${player.y} ${player.z} 1 1`)
+            server.runCommandSilent(`/playsound minecraft:entity.item.break block @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
     }
 })
