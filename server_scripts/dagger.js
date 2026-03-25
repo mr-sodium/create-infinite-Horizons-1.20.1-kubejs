@@ -61,16 +61,10 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
             server.runCommandSilent(`/playsound minecraft:entity.item.break block @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
     }
-    // console.log(result.block.x+1)
-    // if(result.block == 'minecraft:red_concrete'){   //red concrete is to be replaced with spell funnel
-    //     if(level.getBlock(result.block.x + 1, result.block.y, result.block.z).id == 'minecraft:yellow_concrete' &&
-    //     level.getBlock(result.block.x - 1, result.block.y, result.block.z).id == 'minecraft:yellow_concrete' &&
-    //     level.getBlock(result.block.x, result.block.y, result.block.z + 1).id == 'minecraft:yellow_concrete' &&
-    //     level.getBlock(result.block.x, result.block.y, result.block.z - 1).id == 'minecraft:yellow_concrete' &&
-    //     level.getBlock(result.block.x, result.block.y, result.block.z - 2).id == 'minecraft:end_portal_frame' &&
-    //     level.getBlock(result.block.x + 1, result.block.y, result.block.z - 2).id == 'minecraft:end_portal_frame' &&
-    //     level.getBlock(result.block.x,+1 result.block.y, result.block.z - 2).id == 'minecraft:end_portal_frame'){
-    //         console.log("testdone")
-    //     }
-    // }
+    console.log(result.block.x+1)
+    if(result.block == 'minecraft:red_concrete'){   //red concrete is to be replaced with spell funnel
+        if(level.getBlock(result.block.x + 1, result.block.y, result.block.z).id == 'minecraft:yellow_concrete' && level.getBlock(result.block.x - 1, result.block.y, result.block.z).id == 'minecraft:yellow_concrete' && level.getBlock(result.block.x, result.block.y, result.block.z + 1).id == 'minecraft:yellow_concrete' && level.getBlock(result.block.x, result.block.y, result.block.z - 1).id == 'minecraft:yellow_concrete' ){
+            console.log("testdone")
+        }
+    }
 })
