@@ -2,6 +2,7 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
     const { item, player, hand, server, level } = event
     const reach = 4.5
     const result = player.rayTrace(reach, true)
+    const block = result.block
     if (hand != 'MAIN_HAND') return
 
     if (!player.creative) {
@@ -14,9 +15,12 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
             server.runCommandSilent(`/playsound minecraft:entity.item.break block @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
     }
-    console.log(result.block.x+1)
-    if(result.block == 'minecraft:red_concrete'){   //red concrete is to be replaced with spell funnel
-        if(level.getBlock(result.block.x + 1, result.block.y, result.block.z).id == 'minecraft:yellow_concrete' && level.getBlock(result.block.x - 1, result.block.y, result.block.z).id == 'minecraft:yellow_concrete' && level.getBlock(result.block.x, result.block.y, result.block.z + 1).id == 'minecraft:yellow_concrete' && level.getBlock(result.block.x, result.block.y, result.block.z - 1).id == 'minecraft:yellow_concrete' ){
+    console.log(block.x+1)
+    if(block == 'minecraft:red_concrete'){   //red concrete is to be replaced with spell funnel
+        if(level.getBlock(block.x + 1, block.y, block.z).id == 'minecraft:yellow_concrete' &&
+        level.getBlock(block.x - 1, block.y, block.z).id == 'minecraft:yellow_concrete' &&
+        level.getBlock(block.x, block.y, block.z + 1).id == 'minecraft:yellow_concrete' &&
+        level.getBlock(block.x, block.y, block.z - 1).id == 'minecraft:yellow_concrete' ) {
             console.log("testdone")
         }
     }
