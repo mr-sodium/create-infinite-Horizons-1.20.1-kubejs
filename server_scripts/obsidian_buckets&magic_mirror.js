@@ -10,6 +10,7 @@ ItemEvents.entityInteracted('kubejs:obsidian_bucket', event => {
 ItemEvents.rightClicked(event => {
     const { player, item, level, target, hand } = event
     const reach = 4.5
+    const cooldowntime = 600;
     const result = player.rayTrace(reach, true)
     const dimension = player.level.dimension.toString()
 
@@ -27,8 +28,7 @@ ItemEvents.rightClicked(event => {
     ]
     const spawnPos = player.getRespawnPosition()
     const respawnDim = player.getRespawnDimension()
-    const cooldowntime = 600;
-
+    
     if (item.id == 'kubejs:obsidian_bucket') {
         if (!result || !result.block) return
         const block = result.block
