@@ -17,8 +17,8 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
     d: 'minecraft:blue_concrete',
     e: 'minecraft:purple_concrete'
     }
-    //a
-        function matchesPattern(level, center) {
+    
+    function matchesPattern(level, center) {
       let startX = center.x - 3
       let startZ = center.z - 3
       let y = center.y
@@ -47,7 +47,7 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
         console.log("testdone")
       }
     }
-    //b 
+    
     if (hand != 'MAIN_HAND') return
 
     if (!player.creative) {
