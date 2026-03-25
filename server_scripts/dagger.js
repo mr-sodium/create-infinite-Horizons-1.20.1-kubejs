@@ -29,7 +29,6 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
         for (let dx = 0; dx < row.length; dx++) {
           let char = row[dx]
 
-          // skip 'a'
           if (char == 'a') continue
 
           let expected = keys[char]
