@@ -1,5 +1,5 @@
 ItemEvents.rightClicked('kubejs:dagger', event => {
-    const { item, player, hand } = event
+    const { item, player, hand, server } = event
     
     if (hand != 'MAIN_HAND') return
 
@@ -10,7 +10,7 @@ ItemEvents.rightClicked('kubejs:dagger', event => {
         
         if (item.damageValue >= item.maxDamage) {
             item.count--
-            player.playSound('minecraft:entity.item.break')
+            event.server.runCommandSilent(`/playsound minecraft:entity.item.break block @p ${player.x} ${player.y} ${player.z} 1 1`)
         }
     }
 })
