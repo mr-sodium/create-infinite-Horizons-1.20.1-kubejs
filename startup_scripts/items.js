@@ -32,4 +32,5 @@ StartupEvents.registry('item', event => {
     event.create('broken_magic_mirror').displayName('Broken Magic Mirror').maxStackSize(1)
     event.create('gamblers_eye').displayName('Gamblers Eye')
     event.create('rubber_sheet').displayName('Rubber Sheet')
+    event.create('dagger', 'sword').displayName('Dagger').tier('iron').attackDamageBaseline(1.0).speedBaseline(-1.0).maxStackSize(1).maxDamage(412)
 })
