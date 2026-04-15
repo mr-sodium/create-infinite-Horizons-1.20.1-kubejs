@@ -49,4 +49,3 @@ StartupEvents.registry('item', event => {
 
     event.create('empty_can').displayName('Empty Can')
 })
-    
