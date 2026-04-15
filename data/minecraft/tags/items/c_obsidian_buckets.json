@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "kubejs:obsidian_bucket",
+    "kubejs:obsidian_water__bucket",
+    "kubejs:obsidian_lava_bucket",
+    "kubejs:obsidian_powder_snow_bucket"
+  ]
+}

@@ -1,4 +1,3 @@
-
 PlayerEvents.inventoryChanged(event => {
   const player = event.player
   if(player.mainHandItem.id !== 'minecraft:fishing_rod'){return}
