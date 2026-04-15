@@ -29,8 +29,11 @@ ItemEvents.rightClicked(event => {
     let placed = false
     const block = result.block
     
-    if (block == fluidToPlace) {
-        if (block.properties.level != 0) {
+    if (block == fluidToPlace && block != 'minecraft:powder_snow') {
+        if (block.properties.level != 0 && block != 'minecraft:powder_snow') {
+            block.set(fluidToPlace)
+            placed = true
+        } else if (block.properties.level == 0 && block != 'minecraft:powder_snow') {
             block.set(fluidToPlace)
             placed = true
         }

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "N": {
-        "item": "create:copper_sheet"
+        "item": "minecraft:gold_ingot"
     }
   },
   "pattern": [
@@ -12,8 +12,9 @@
     "NN"
   ],
   "result": {
-    "item": "trials:copper_door",
+    "item": "supplementaries:gold_door",
     "count": 2
   },
   "show_notification": true
 }
+  
