@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "kubejs:empty_can"
+    },
+    "B": {
+        "item": "kubejs:peppi_bucket"
+    },
+    "C": {
+        "item": "kubejs:peppi_wrapper"
+    }
+  },
+  "pattern": [
+    "C",
+    "B",
+    "A"
+  ],
+  "result": {
+    "item": "kubejs:peppi_can"
+  },
+  "show_notification": false
+}
