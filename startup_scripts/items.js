@@ -42,7 +42,6 @@ StartupEvents.registry('item', event => {
                 .effect('minecraft:speed', 400, 4, 1)
                 .effect('minecraft:strength', 400, 4, 1)
                 .eaten(context => {
-                    context.item.shrink(1)
                     context.player.give('kubejs:empty_can')
                 })
         })
