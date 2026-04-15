@@ -47,4 +47,5 @@ StartupEvents.registry('item', event => {
         })
 
     event.create('empty_can').displayName('Empty Can')
+    event.create('peppi_wrapper').displayName('Peppi Wrapper')
 })
