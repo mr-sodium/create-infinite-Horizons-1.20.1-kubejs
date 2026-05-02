@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+        "item": "create:zinc_nugget"
+    },
+    "B": {
+        "item": "createdeco:zinc_sheet"
+    }
+  },
+  "pattern": [
+    "A A",
+    "B B",
+    "AAA"
+  ],
+  "result": {
+    "item": "kubejs:empty_can"
+  },
+  "show_notification": false
+}
